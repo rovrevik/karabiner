@@ -1,0 +1,73 @@
+{
+  "description": "03-hyper-220ms",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "z"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 220
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "z"
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "z"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "left_shift",
+          "modifiers": ["left_command", "left_option", "left_control"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "slash"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 220
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "slash"
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
+        {
+          "halt": true,
+          "key_code": "slash"
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_shift",
+          "modifiers": ["left_command", "left_option", "left_control"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
