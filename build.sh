@@ -47,11 +47,14 @@ with open('$OUT_FILE', 'w') as f:
 
 echo "Built ${#FILES[@]} rules → $OUT_FILE"
 
+# Draw keymap SVG
+uvx --from keymap-drawer keymap draw "$SCRIPT_DIR/keymap.yaml" -o "$OUT_DIR/keymap.svg"
+echo "Generated $OUT_DIR/keymap.svg"
+
 # Install to Karabiner if --install flag is passed
 if [[ "${1:-}" == "--install" ]]; then
   mkdir -p "$TARGET_DIR"
   cp "$OUT_FILE" "$TARGET_DIR/karabiner-cags.json"
   echo "Installed → $TARGET_DIR/karabiner-cags.json"
-  echo ""
-  echo "Done. Enable rules in Karabiner-Elements Preferences → Complex Modifications → Add rule."
+  echo "Enable rules in Karabiner-Elements Preferences → Complex Modifications → Add rule."
 fi

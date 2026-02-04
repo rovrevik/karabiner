@@ -22,28 +22,31 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 
 Additional files:
 - `apple-magic-keyboard.json` — QMK-format physical keyboard layout definition (used by keymap-drawer for visualization)
-- `keymap.yaml` — keymap-drawer layer definitions that produce `keymap.svg`
-- `install.sh` — Lints all config files, then combines them into a single file installed to `~/.config/karabiner/assets/complex_modifications/karabiner-cags.json`
-- `draw.sh` — Regenerates `keymap.svg` from `keymap.yaml` using `keymap-drawer` (via `uvx`)
+- `keymap.yaml` — keymap-drawer layer definitions that produce `keymap.svg` (see note below)
+- `build.sh` — Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
+
+### Why `keymap.yaml` is manually maintained
+
+`keymap.yaml` is a hand-authored file, not generated from the Karabiner JSON configs. While the information overlaps, auto-generating it would be non-trivial: Karabiner configs describe *transformations* (from → to manipulator rules with conditions), while keymap-drawer describes *state* (what each key does on each layer in a positional grid). Translating between the two requires understanding the semantics of each manipulator — parsing tap/hold behavior from `to_if_alone`/`to_if_held_down`, inferring disabled keys, and reconstructing layers from `variable_if` conditions. Given that the layout rarely changes, maintaining `keymap.yaml` by hand is simpler than building a generator.
 
 ## Commands
 
-**Install configs to Karabiner:**
+**Build (lint + combine + draw):**
 ```
-./install.sh
+./build.sh
 ```
-This runs `karabiner_cli --lint-complex-modifications` on each file first. If any lint fails, nothing is installed. After install, enable rules in Karabiner-Elements Preferences → Complex Modifications → Add rule.
+Lints all config files with `karabiner_cli --lint-complex-modifications`, combines them into `out/karabiner-cags.json`, and draws `out/keymap.svg` via `keymap-drawer`. If any lint fails, nothing is built.
+
+**Build and install:**
+```
+./build.sh --install
+```
+Builds as above, then copies `out/karabiner-cags.json` to `~/.config/karabiner/assets/complex_modifications/`. Enable rules in Karabiner-Elements Preferences → Complex Modifications → Add rule.
 
 **Lint a single file manually:**
 ```
 "/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli" --lint-complex-modifications complex-modifications/<file>.json
 ```
-
-**Regenerate keymap diagram:**
-```
-./draw.sh
-```
-Requires `uvx` (from `uv`). Runs `keymap-drawer` to render `keymap.yaml` → `keymap.svg`.
 
 ## Physical Bottom Row
 
