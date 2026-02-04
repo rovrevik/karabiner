@@ -11,10 +11,6 @@
       },
       "to": [
         {
-          "key_code": "left_option",
-          "lazy": true
-        },
-        {
           "set_variable": {
             "name": "physical_left_option",
             "value": 1
@@ -43,7 +39,6 @@
       "from": {
         "key_code": "j",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -66,7 +61,6 @@
       "from": {
         "key_code": "k",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -89,7 +83,6 @@
       "from": {
         "key_code": "l",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -112,7 +105,6 @@
       "from": {
         "key_code": "semicolon",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -135,7 +127,6 @@
       "from": {
         "key_code": "m",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -158,7 +149,6 @@
       "from": {
         "key_code": "comma",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -181,7 +171,6 @@
       "from": {
         "key_code": "period",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
@@ -204,13 +193,72 @@
       "from": {
         "key_code": "slash",
         "modifiers": {
-          "mandatory": ["left_option"],
           "optional": ["any"]
         }
       },
       "to": [
         {
           "key_code": "end"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "up_arrow → disabled",
+      "from": {
+        "key_code": "up_arrow",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "down_arrow → disabled",
+      "from": {
+        "key_code": "down_arrow",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_arrow → disabled",
+      "from": {
+        "key_code": "left_arrow",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "right_arrow → disabled",
+      "from": {
+        "key_code": "right_arrow",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
         }
       ],
       "type": "basic"

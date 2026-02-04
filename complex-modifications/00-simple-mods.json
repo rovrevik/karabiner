@@ -92,9 +92,9 @@
       "type": "basic"
     },
     {
-      "description": "up_arrow → disabled",
+      "description": "left_shift → disabled",
       "from": {
-        "key_code": "up_arrow",
+        "key_code": "left_shift",
         "modifiers": {
           "optional": ["any"]
         }
@@ -107,39 +107,9 @@
       "type": "basic"
     },
     {
-      "description": "down_arrow → disabled",
+      "description": "right_shift → disabled",
       "from": {
-        "key_code": "down_arrow",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "left_arrow → disabled",
-      "from": {
-        "key_code": "left_arrow",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "right_arrow → disabled",
-      "from": {
-        "key_code": "right_arrow",
+        "key_code": "right_shift",
         "modifiers": {
           "optional": ["any"]
         }
