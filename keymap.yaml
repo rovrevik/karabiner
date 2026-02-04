@@ -1,0 +1,176 @@
+layout:
+  qmk_info_json: apple-magic-keyboard.json
+  layout_name: LAYOUT
+
+layers:
+  Base:
+    # Row 0: function row
+    - - {type: ghost}        # Esc (disabled in 00-simple-mods)
+      - F1
+      - F2
+      - F3
+      - F4
+      - F5
+      - F6
+      - F7
+      - F8
+      - F9
+      - F10
+      - F11
+      - F12
+      - Power
+    # Row 1: number row
+    - - "`"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
+      - "7"
+      - "8"
+      - "9"
+      - "0"
+      - "-"
+      - "="
+      - Bksp
+    # Row 2: QWERTY top
+    - - Tab
+      - Q
+      - W
+      - E
+      - R
+      - T
+      - Y
+      - U
+      - I
+      - O
+      - P
+      - "["
+      - "]"
+      - "\\"
+    # Row 3: home row (CAGS mods)
+    - - {t: Esc, h: Esc}    # CapsLock → Esc
+      - {t: A, h: Ctrl}
+      - {t: S, h: Alt}
+      - {t: D, h: Cmd}
+      - {t: F, h: Shift}
+      - G
+      - H
+      - {t: J, h: Shift}
+      - {t: K, h: Cmd}
+      - {t: L, h: Alt}
+      - {t: ";", h: Ctrl}
+      - "'"
+      - Enter
+    # Row 4: bottom row (Hyper/Meh)
+    - - {type: ghost}        # LShift (disabled)
+      - {t: Z, h: Hyper}
+      - {t: X, h: Meh}
+      - C
+      - V
+      - B
+      - N
+      - M
+      - ","
+      - {t: ".", h: Meh}
+      - {t: "/", h: Hyper}
+      - {type: ghost}        # RShift (disabled)
+    # Row 5: modifiers
+    - - Fn
+      - {type: ghost}        # LCtrl (disabled)
+      - {t: LOpt, h: Cursor}   # physical left_option → cursor layer
+      - {type: ghost}        # LCmd (disabled)
+      - Space
+      - {type: ghost}        # RCmd (disabled)
+      - {type: ghost}        # ROpt (disabled)
+      - {type: ghost}        # Left (disabled)
+      - {type: ghost}        # Up (disabled)
+      - {type: ghost}        # Down (disabled)
+      - {type: ghost}        # Right (disabled)
+
+  Cursor:
+    # Row 0: function row
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 1: number row
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 2: QWERTY top
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 3: home row — navigation (JKLD→arrows per Karabiner config)
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - Left               # J → Left
+      - Down               # K → Down
+      - Up                 # L → Up
+      - Right              # ; → Right
+      - {type: trans}
+      - {type: trans}
+    # Row 4: bottom row — Home/PgDn/PgUp/End
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - Home               # M → Home
+      - PgDn               # , → PgDn
+      - PgUp               # . → PgUp
+      - End                # / → End
+      - {type: trans}
+    # Row 5: modifiers
+    - - {type: trans}
+      - {type: trans}
+      - {t: LOpt, h: Cursor, type: held}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
