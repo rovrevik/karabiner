@@ -12,6 +12,8 @@ FILES=(
   02-home_row_mods-cags.json
   03-hyper-220ms.json
   04-meh-220ms.json
+  05-numpad.json
+  06-sympad.json
 )
 
 # Lint all files before copying any

@@ -79,10 +79,10 @@ layers:
     # Row 5: modifiers
     - - Fn
       - {type: ghost}        # LCtrl (disabled)
-      - {t: LOpt, h: Cursor}   # physical left_option → cursor layer
-      - {type: ghost}        # LCmd (disabled)
+      - {h: Cursor}            # physical left_option → cursor layer
+      - {h: NumPad}            # physical left_command → numpad layer
       - Space
-      - {type: ghost}        # RCmd (disabled)
+      - {h: SymPad}            # physical right_command → sympad layer
       - {type: ghost}        # ROpt (disabled)
       - {type: ghost}        # Left (disabled)
       - {type: ghost}        # Up (disabled)
@@ -165,10 +165,182 @@ layers:
     # Row 5: modifiers
     - - {type: trans}
       - {type: trans}
-      - {t: LOpt, h: Cursor, type: held}
+      - {h: Cursor, type: held}
       - {type: trans}
       - {type: trans}
       - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+
+  NumPad:
+    # Row 0: function row
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 1: number row
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 2: `() on left, \789 on right
+    - - {type: trans}
+      - "`"
+      - {type: ghost}
+      - "("
+      - ")"
+      - {type: trans}
+      - "\\"
+      - "7"
+      - "8"
+      - "9"
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+    # Row 3: [] on left, '456- on right
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {t: "[", h: Cmd}
+      - {t: "]", h: Shift}
+      - {type: trans}
+      - "'"
+      - {t: "4", h: Shift}
+      - {t: "5", h: Cmd}
+      - {t: "6", h: Alt}
+      - {t: "-", h: Ctrl}
+      - {type: ghost}
+      - {type: trans}
+    # Row 4: braces on left, "123= on right
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - "{"
+      - "}"
+      - {type: trans}
+      - '"'
+      - "1"
+      - "2"
+      - {t: "3", h: Meh}
+      - {t: "=", h: Hyper}
+      - {type: trans}
+    # Row 5: modifiers — 0 on right option
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {h: NumPad, type: held}
+      - {type: trans}
+      - {type: trans}
+      - "0"
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+
+  SymPad:
+    # Row 0: function row
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 1: number row
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+    # Row 2: ~() on left, |&* on right
+    - - {type: trans}
+      - "~"
+      - {type: ghost}
+      - "("
+      - ")"
+      - {type: trans}
+      - "|"
+      - "&"
+      - "*"
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: trans}
+    # Row 3: [] on left, '$%^_ on right
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {t: "[", h: Cmd}
+      - {t: "]", h: Shift}
+      - {type: trans}
+      - "'"
+      - {t: "$", h: Shift}
+      - {t: "%", h: Cmd}
+      - {t: "^", h: Alt}
+      - {t: "_", h: Ctrl}
+      - {type: ghost}
+      - {type: trans}
+    # Row 4: {} on left, "!@#+ on right
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - "{"
+      - "}"
+      - {type: trans}
+      - '"'
+      - "!"
+      - "@"
+      - {t: "#", h: Meh}
+      - {t: "+", h: Hyper}
+      - {type: trans}
+    # Row 5: modifiers
+    - - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {type: trans}
+      - {h: SymPad, type: held}
       - {type: trans}
       - {type: trans}
       - {type: trans}

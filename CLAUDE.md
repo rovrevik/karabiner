@@ -17,17 +17,28 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `02-home_row_mods-cags.json` | CAGS home row mods: A=Ctrl, S=Alt, D=Cmd, F=Shift (left); J=Shift, K=Cmd, L=Alt, ;=Ctrl (right). Includes all simultaneous multi-key modifier combos |
 | `03-hyper-220ms.json` | Z and / → Hyper (Shift+Cmd+Opt+Ctrl) on 220ms hold |
 | `04-meh-220ms.json` | X and . → Meh (Shift+Opt+Ctrl) on 220ms hold |
-
-`karabiner-actions/` contains alternative/experimental configs (R/U as Meh, different timing variants) sourced from the Erlendms karabiner-actions repo.
+| `05-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
+| `06-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
 
 Additional files:
 - `apple-magic-keyboard.json` — QMK-format physical keyboard layout definition (used by keymap-drawer for visualization)
 - `keymap.yaml` — keymap-drawer layer definitions that produce `keymap.svg` (see note below)
 - `build.sh` — Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
+- `out/` — Build artifacts (gitignored). Contains `karabiner-cags.json` and `keymap.svg`.
 
 ### Why `keymap.yaml` is manually maintained
 
 `keymap.yaml` is a hand-authored file, not generated from the Karabiner JSON configs. While the information overlaps, auto-generating it would be non-trivial: Karabiner configs describe *transformations* (from → to manipulator rules with conditions), while keymap-drawer describes *state* (what each key does on each layer in a positional grid). Translating between the two requires understanding the semantics of each manipulator — parsing tap/hold behavior from `to_if_alone`/`to_if_held_down`, inferring disabled keys, and reconstructing layers from `variable_if` conditions. Given that the layout rarely changes, maintaining `keymap.yaml` by hand is simpler than building a generator.
+
+## Dependencies
+
+- **Karabiner-Elements** — provides `karabiner_cli` at `/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli`
+- **python3** — used by `build.sh` to combine JSON configs
+- **uv** (`uvx`) — runs `keymap-drawer` for SVG generation without a persistent install
+
+## Adding a New Config File
+
+When adding a new `complex-modifications/*.json` file, it must also be added to the `FILES` array in `build.sh` — that array is the source of truth for which configs are linted, combined, and installed.
 
 ## Commands
 
