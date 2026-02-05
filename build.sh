@@ -10,8 +10,8 @@ FILES=(
   00-simple-mods.json
   01-cursor.json
   02-home_row_mods-cags.json
-  03-hyper-220ms.json
-  04-meh-220ms.json
+  03-hyper.json
+  04-meh.json
   05-numpad.json
   06-sympad.json
 )

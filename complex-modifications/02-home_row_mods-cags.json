@@ -456,6 +456,9 @@
       "from": {
         "key_code": "a"
       },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 370
+      },
       "to_delayed_action": {
         "to_if_canceled": [
           {
@@ -485,6 +488,9 @@
     {
       "from": {
         "key_code": "s"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 330
       },
       "to_delayed_action": {
         "to_if_canceled": [
@@ -516,6 +522,9 @@
       "from": {
         "key_code": "d"
       },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 300
+      },
       "to_delayed_action": {
         "to_if_canceled": [
           {
@@ -545,6 +554,9 @@
     {
       "from": {
         "key_code": "f"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 280
       },
       "to_delayed_action": {
         "to_if_canceled": [
@@ -1028,6 +1040,9 @@
       "from": {
         "key_code": "semicolon"
       },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 370
+      },
       "to_delayed_action": {
         "to_if_canceled": [
           {
@@ -1057,6 +1072,9 @@
     {
       "from": {
         "key_code": "l"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 330
       },
       "to_delayed_action": {
         "to_if_canceled": [
@@ -1088,6 +1106,9 @@
       "from": {
         "key_code": "k"
       },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 300
+      },
       "to_delayed_action": {
         "to_if_canceled": [
           {
@@ -1117,6 +1138,9 @@
     {
       "from": {
         "key_code": "j"
+      },
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 280
       },
       "to_delayed_action": {
         "to_if_canceled": [

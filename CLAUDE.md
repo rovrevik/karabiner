@@ -6,6 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Karabiner-Elements complex modification configs for macOS keyboard customization, targeting the **Apple Magic Keyboard (USB-C)** — the compact variant without Touch ID or numeric keypad ([MXCL3LL/A](https://www.apple.com/shop/product/mxcl3ll/a/magic-keyboard-usb-c-us-english)). The system implements CAGS home row mods, Hyper/Meh modifiers, and cursor navigation — mirroring a ZMK Corne split keyboard layout on a standard keyboard.
 
+## User Terminology
+- **HRM / home row mods** = CAGS order: A=Ctrl, S=Alt, D=Cmd(Gui), F=Shift / J=Shift, K=Cmd, L=Alt, ;=Ctrl
+- **Hyper** = lower pinkies (Z and /) — Shift+Cmd+Opt+Ctrl on hold (pinky timing)
+- **Meh** = lower ring fingers (X and .) — Shift+Opt+Ctrl on hold (ring timing)
+
 ## File Structure
 
 All configs live in `complex-modifications/`. Files are numbered to indicate intended rule ordering in the Karabiner profile (earlier rules take priority):
@@ -14,9 +19,9 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 |------|---------|
 | `00-simple-mods.json` | Caps→Escape, disable physical modifier keys (escape, left_control, left_command, right_command, right_option, left_shift, right_shift) |
 | `01-cursor.json` | Physical left_option + right-hand keys for vim-style navigation (JKLD→arrows, M,./ →Home/PgDn/PgUp/End). Uses a variable to distinguish physical left_option from home-row-mod S |
-| `02-home_row_mods-cags.json` | CAGS home row mods: A=Ctrl, S=Alt, D=Cmd, F=Shift (left); J=Shift, K=Cmd, L=Alt, ;=Ctrl (right). Includes all simultaneous multi-key modifier combos |
-| `03-hyper-220ms.json` | Z and / → Hyper (Shift+Cmd+Opt+Ctrl) on 220ms hold |
-| `04-meh-220ms.json` | X and . → Meh (Shift+Opt+Ctrl) on 220ms hold |
+| `02-home_row_mods-cags.json` | CAGS home row mods: A=Ctrl, S=Alt, D=Cmd, F=Shift (left); J=Shift, K=Cmd, L=Alt, ;=Ctrl (right). Per-finger hold thresholds derived from ZMK companion config (`corne.keymap`). Includes all simultaneous multi-key modifier combos |
+| `03-hyper.json` | Z and / → Hyper (Shift+Cmd+Opt+Ctrl) on hold (pinky timing from ZMK) |
+| `04-meh.json` | X and . → Meh (Shift+Opt+Ctrl) on hold (ring timing from ZMK) |
 | `05-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
 | `06-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
 
@@ -74,7 +79,7 @@ The Magic Keyboard compact bottom row (left to right): **Fn, Control, Option, Co
 Each file contains a single JSON object with `"description"` and `"manipulators"` array. Key patterns used:
 
 - **Tap vs hold**: `to_if_alone` for tap output, `to_if_held_down` for modifier activation, `to_delayed_action` for cancellation handling
-- **Timing**: `basic.to_if_held_down_threshold_milliseconds` sets hold threshold (220ms for Hyper/Meh)
+- **Timing**: `basic.to_if_held_down_threshold_milliseconds` sets per-finger hold thresholds derived from the ZMK companion config (`corne.keymap` tapping-term values)
 - **Variable tracking**: `set_variable` / `variable_if` conditions to track physical key state (used in cursor.json to distinguish physical left_option from home-row-mod S)
 - **Modifier passthrough**: `"optional": ["any"]` allows combining with other held modifiers
 
