@@ -702,6 +702,28 @@
       "type": "basic"
     },
     {
+      "description": "left_command + right_option → 0",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "right_option",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "0"
+        }
+      ],
+      "type": "basic"
+    },
+    {
       "description": "left_command + period → tap: 3, hold: Meh",
       "conditions": [
         {
@@ -787,28 +809,6 @@
           "halt": true,
           "key_code": "right_shift",
           "modifiers": ["right_command", "right_option", "right_control"]
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "left_command + right_option → 0",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "physical_left_command",
-          "value": 1
-        }
-      ],
-      "from": {
-        "key_code": "right_option",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "0"
         }
       ],
       "type": "basic"
