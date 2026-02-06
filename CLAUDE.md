@@ -26,6 +26,7 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `06-cursor.json` | Physical left_option + right-hand keys for vim-style navigation (J, K, L, ; → arrows, M, . / → Home/PgDn/PgUp/End). Uses a variable to distinguish physical left_option from home-row-mod S |
 | `07-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
 | `08-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
+| `09-thumbs.json` | Thumb-key rules (space and nearby). Empty by default; add manipulators as needed |
 
 Additional files:
 - `apple-magic-keyboard.json` — QMK-format physical keyboard layout definition (used by keymap-drawer for visualization)

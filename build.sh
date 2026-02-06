@@ -16,9 +16,10 @@ FILES=(
   06-cursor.json
   07-numpad.json
   08-sympad.json
+  09-thumbs.json
 )
 
-# Rule order in combined JSON: cursor/numpad/sympad first (track physical keys), then 00/01, then disable-modifiers/disable-numbers, then HRM/Hyper/Meh
+# Rule order in combined JSON: cursor/numpad/sympad first (track physical keys), then 00/01, then disable-modifiers/disable-numbers, then HRM/Hyper/Meh, thumbs
 COMBINE_ORDER=(
   00-simple.json
   05-disable-numbers.json
@@ -29,6 +30,7 @@ COMBINE_ORDER=(
   02-disable-modifiers.json
   03-hyper.json
   04-meh.json
+  09-thumbs.json
 )
 
 # Lint all files before copying any
