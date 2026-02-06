@@ -18,13 +18,13 @@ FILES=(
 
 # Rule order in combined JSON: numpad/sympad first (track physical command), then 00/01, then HRM/Hyper/Meh
 COMBINE_ORDER=(
+  00-simple.json
+  04-cursor.json
   05-numpad.json
   06-sympad.json
-  00-simple.json
   01-home_row_mods-cags.json
   02-hyper.json
   03-meh.json
-  04-cursor.json
 )
 
 # Lint all files before copying any
