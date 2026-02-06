@@ -1,17 +1,17 @@
 {
-  "description": "04-meh",
+  "description": "02-hyper",
   "manipulators": [
     {
       "from": {
-        "key_code": "x"
+        "key_code": "z"
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 330
+        "basic.to_if_held_down_threshold_milliseconds": 370
       },
       "to_delayed_action": {
         "to_if_canceled": [
           {
-            "key_code": "x"
+            "key_code": "z"
           }
         ],
         "to_if_invoked": [
@@ -23,29 +23,29 @@
       "to_if_alone": [
         {
           "halt": true,
-          "key_code": "x"
+          "key_code": "z"
         }
       ],
       "to_if_held_down": [
         {
           "halt": true,
           "key_code": "left_shift",
-          "modifiers": ["left_option", "left_control"]
+          "modifiers": ["left_command", "left_option", "left_control"]
         }
       ],
       "type": "basic"
     },
     {
       "from": {
-        "key_code": "period"
+        "key_code": "slash"
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 330
+        "basic.to_if_held_down_threshold_milliseconds": 370
       },
       "to_delayed_action": {
         "to_if_canceled": [
           {
-            "key_code": "period"
+            "key_code": "slash"
           }
         ],
         "to_if_invoked": [
@@ -57,14 +57,14 @@
       "to_if_alone": [
         {
           "halt": true,
-          "key_code": "period"
+          "key_code": "slash"
         }
       ],
       "to_if_held_down": [
         {
           "halt": true,
           "key_code": "right_shift",
-          "modifiers": ["right_option", "right_control"]
+          "modifiers": ["left_command", "left_option", "left_control"]
         }
       ],
       "type": "basic"

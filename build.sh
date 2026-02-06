@@ -8,10 +8,10 @@ KARABINER_CLI="/Library/Application Support/org.pqrs/Karabiner-Elements/bin/kara
 
 FILES=(
   00-simple.json
-  01-cursor.json
-  02-home_row_mods-cags.json
-  03-hyper.json
-  04-meh.json
+  01-home_row_mods-cags.json
+  02-hyper.json
+  03-meh.json
+  04-cursor.json
   05-numpad.json
   06-sympad.json
 )
@@ -21,10 +21,10 @@ COMBINE_ORDER=(
   05-numpad.json
   06-sympad.json
   00-simple.json
-  01-cursor.json
-  02-home_row_mods-cags.json
-  03-hyper.json
-  04-meh.json
+  01-home_row_mods-cags.json
+  02-hyper.json
+  03-meh.json
+  04-cursor.json
 )
 
 # Lint all files before copying any

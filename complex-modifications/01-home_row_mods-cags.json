@@ -1,5 +1,5 @@
 {
-  "description": "02-home_row_mods-cags",
+  "description": "01-home_row_mods-cags",
   "manipulators": [
     {
       "description": "left_control → disabled",
