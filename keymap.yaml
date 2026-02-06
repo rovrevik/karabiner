@@ -191,20 +191,20 @@ layers:
       - {type: trans}
       - {type: trans}
       - {type: trans}
-    # Row 1: number row
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    # Row 1: number row — physical keys ` thru = disabled on layer
+    - - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
       - {type: trans}
     # Row 2: `() on left, \789 on right
     - - {type: trans}
@@ -277,20 +277,20 @@ layers:
       - {type: trans}
       - {type: trans}
       - {type: trans}
-    # Row 1: number row
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    # Row 1: number row — physical keys ` thru = disabled on layer
+    - - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
+      - {type: ghost}
       - {type: trans}
     # Row 2: ~() on left, |&* on right
     - - {type: trans}
