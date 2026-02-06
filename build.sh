@@ -12,17 +12,19 @@ FILES=(
   02-disable-modifiers.json
   03-hyper.json
   04-meh.json
-  05-cursor.json
-  06-numpad.json
-  07-sympad.json
+  05-disable-numbers.json
+  06-cursor.json
+  07-numpad.json
+  08-sympad.json
 )
 
-# Rule order in combined JSON: numpad/sympad first (track physical command), then 00/01, then disable-modifiers, then HRM/Hyper/Meh/cursor
+# Rule order in combined JSON: cursor/numpad/sympad first (track physical keys), then 00/01, then disable-modifiers/disable-numbers, then HRM/Hyper/Meh
 COMBINE_ORDER=(
   00-simple.json
-  05-cursor.json
-  06-numpad.json
-  07-sympad.json
+  05-disable-numbers.json
+  06-cursor.json
+  07-numpad.json
+  08-sympad.json
   01-home_row_mods-cags.json
   02-disable-modifiers.json
   03-hyper.json

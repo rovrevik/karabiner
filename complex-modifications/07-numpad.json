@@ -1,10 +1,10 @@
 {
-  "description": "07-sympad: physical right_command + keys for symbol layer",
+  "description": "07-numpad: physical left_command + keys for numpad layer",
   "manipulators": [
     {
-      "description": "track physical right_command key",
+      "description": "track physical left_command key",
       "from": {
-        "key_code": "right_command",
+        "key_code": "left_command",
         "modifiers": {
           "optional": ["any"]
         }
@@ -12,7 +12,7 @@
       "to": [
         {
           "set_variable": {
-            "name": "physical_right_command",
+            "name": "physical_left_command",
             "value": 1
           }
         }
@@ -20,115 +20,115 @@
       "to_after_key_up": [
         {
           "set_variable": {
-            "name": "physical_right_command",
+            "name": "physical_left_command",
             "value": 0
           }
         }
       ],
       "to_if_alone": [
         {
-          "key_code": "spacebar"
+          "key_code": "tab"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "sympad layer: ` → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: ` → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "grave_accent_and_tilde", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 1 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 1 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "1", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 2 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 2 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "2", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 3 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 3 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "3", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 4 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 4 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "4", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 5 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 5 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "5", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 6 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 6 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "6", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 7 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 7 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "7", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 8 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 8 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "8", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 9 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 9 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "9", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 0 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: 0 → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "0", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: - → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: - → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "hyphen", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "sympad layer: = → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
+      "description": "numpad layer: = → disabled",
+      "conditions": [{"type": "variable_if", "name": "physical_left_command", "value": 1}],
       "from": {"key_code": "equal_sign", "modifiers": {"optional": ["any"]}},
       "to": [{"key_code": "vk_none"}],
       "type": "basic"
     },
     {
-      "description": "right_command + q → ~",
+      "description": "left_command + q → `",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -140,18 +140,17 @@
       },
       "to": [
         {
-          "key_code": "grave_accent_and_tilde",
-          "modifiers": ["left_shift"]
+          "key_code": "grave_accent_and_tilde"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "right_command + w → disabled",
+      "description": "left_command + w → disabled",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -169,11 +168,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + e → (",
+      "description": "left_command + e → (",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -192,11 +191,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + r → )",
+      "description": "left_command + r → )",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -215,11 +214,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + d → tap: [, hold: Cmd",
+      "description": "left_command + d → tap: [, hold: Cmd",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -256,11 +255,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + f → tap: ], hold: Shift",
+      "description": "left_command + f → tap: ], hold: Shift",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -297,11 +296,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + c → {",
+      "description": "left_command + c → {",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -320,11 +319,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + v → }",
+      "description": "left_command + v → }",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -343,11 +342,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + y → |",
+      "description": "left_command + y → \\",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -359,18 +358,17 @@
       },
       "to": [
         {
-          "key_code": "backslash",
-          "modifiers": ["left_shift"]
+          "key_code": "backslash"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "right_command + u → &",
+      "description": "left_command + u → 7",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -382,18 +380,17 @@
       },
       "to": [
         {
-          "key_code": "7",
-          "modifiers": ["left_shift"]
+          "key_code": "7"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "right_command + i → *",
+      "description": "left_command + i → 8",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -405,18 +402,17 @@
       },
       "to": [
         {
-          "key_code": "8",
-          "modifiers": ["left_shift"]
+          "key_code": "8"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "right_command + o → disabled",
+      "description": "left_command + o → 9",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -428,39 +424,17 @@
       },
       "to": [
         {
-          "key_code": "vk_none"
+          "key_code": "9"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "right_command + p → disabled",
+      "description": "left_command + [ → disabled",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
-          "value": 1
-        }
-      ],
-      "from": {
-        "key_code": "p",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "right_command + [ → disabled",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -478,11 +452,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + ] → disabled",
+      "description": "left_command + ] → disabled",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -500,11 +474,55 @@
       "type": "basic"
     },
     {
-      "description": "right_command + h → '",
+      "description": "left_command + \\ → disabled",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "backslash",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_command + p → disabled",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "p",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_command + h → '",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -522,11 +540,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + j → tap: $, hold: Shift",
+      "description": "left_command + j → tap: 4, hold: Shift",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -539,8 +557,7 @@
       "to_delayed_action": {
         "to_if_canceled": [
           {
-            "key_code": "4",
-            "modifiers": ["left_shift"]
+            "key_code": "4"
           }
         ],
         "to_if_invoked": [
@@ -552,8 +569,7 @@
       "to_if_alone": [
         {
           "halt": true,
-          "key_code": "4",
-          "modifiers": ["left_shift"]
+          "key_code": "4"
         }
       ],
       "to_if_held_down": [
@@ -565,11 +581,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + k → tap: %, hold: Cmd",
+      "description": "left_command + k → tap: 5, hold: Cmd",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -582,8 +598,7 @@
       "to_delayed_action": {
         "to_if_canceled": [
           {
-            "key_code": "5",
-            "modifiers": ["left_shift"]
+            "key_code": "5"
           }
         ],
         "to_if_invoked": [
@@ -595,8 +610,7 @@
       "to_if_alone": [
         {
           "halt": true,
-          "key_code": "5",
-          "modifiers": ["left_shift"]
+          "key_code": "5"
         }
       ],
       "to_if_held_down": [
@@ -608,11 +622,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + l → tap: ^, hold: Alt",
+      "description": "left_command + l → tap: 6, hold: Alt",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -625,8 +639,7 @@
       "to_delayed_action": {
         "to_if_canceled": [
           {
-            "key_code": "6",
-            "modifiers": ["left_shift"]
+            "key_code": "6"
           }
         ],
         "to_if_invoked": [
@@ -638,8 +651,7 @@
       "to_if_alone": [
         {
           "halt": true,
-          "key_code": "6",
-          "modifiers": ["left_shift"]
+          "key_code": "6"
         }
       ],
       "to_if_held_down": [
@@ -651,11 +663,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + semicolon → tap: _, hold: Ctrl",
+      "description": "left_command + semicolon → tap: -, hold: Ctrl",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -668,8 +680,7 @@
       "to_delayed_action": {
         "to_if_canceled": [
           {
-            "key_code": "hyphen",
-            "modifiers": ["left_shift"]
+            "key_code": "hyphen"
           }
         ],
         "to_if_invoked": [
@@ -681,8 +692,7 @@
       "to_if_alone": [
         {
           "halt": true,
-          "key_code": "hyphen",
-          "modifiers": ["left_shift"]
+          "key_code": "hyphen"
         }
       ],
       "to_if_held_down": [
@@ -694,11 +704,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + quote → disabled",
+      "description": "left_command + quote → disabled",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -716,11 +726,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + n → \"",
+      "description": "left_command + n → \"",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -739,11 +749,11 @@
       "type": "basic"
     },
     {
-      "description": "right_command + m → !",
+      "description": "left_command + m → 1",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -755,18 +765,17 @@
       },
       "to": [
         {
-          "key_code": "1",
-          "modifiers": ["left_shift"]
+          "key_code": "1"
         }
       ],
       "type": "basic"
     },
     {
-      "description": "right_command + comma → @",
+      "description": "left_command + comma → 2",
       "conditions": [
         {
           "type": "variable_if",
-          "name": "physical_right_command",
+          "name": "physical_left_command",
           "value": 1
         }
       ],
@@ -778,8 +787,29 @@
       },
       "to": [
         {
-          "key_code": "2",
-          "modifiers": ["left_shift"]
+          "key_code": "2"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_command + right_option → 0",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "right_option",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "0"
         }
       ],
       "type": "basic"
