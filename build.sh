@@ -16,6 +16,17 @@ FILES=(
   06-sympad.json
 )
 
+# Rule order in combined JSON: numpad/sympad first (track physical command), then 00/01, then HRM/Hyper/Meh
+COMBINE_ORDER=(
+  05-numpad.json
+  06-sympad.json
+  00-simple-mods.json
+  01-cursor.json
+  02-home_row_mods-cags.json
+  03-hyper.json
+  04-meh.json
+)
+
 # Lint all files before copying any
 for file in "${FILES[@]}"; do
   src="$SOURCE_DIR/$file"
@@ -45,9 +56,9 @@ combined = {'title': 'CAGS Home Row Mods + Navigation', 'rules': rules}
 with open('$OUT_FILE', 'w') as f:
     json.dump(combined, f, indent=2)
     f.write('\n')
-" "${FILES[@]/#/$SOURCE_DIR/}"
+" "${COMBINE_ORDER[@]/#/$SOURCE_DIR/}"
 
-echo "Built ${#FILES[@]} rules → $OUT_FILE"
+echo "Built ${#COMBINE_ORDER[@]} rules → $OUT_FILE"
 
 # Draw keymap SVG
 uvx --from keymap-drawer keymap draw "$SCRIPT_DIR/keymap.yaml" -o "$OUT_DIR/keymap.svg"

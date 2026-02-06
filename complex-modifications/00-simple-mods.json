@@ -1,124 +1,16 @@
 {
-  "description": "00-simple-mods: remap caps_lock, disable unused physical keys",
+  "description": "00-simple-mods: disabled and remapped",
   "manipulators": [
     {
       "description": "caps_lock → escape",
-      "from": {
-        "key_code": "caps_lock",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "escape"
-        }
-      ],
+      "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "escape" }],
       "type": "basic"
     },
     {
       "description": "escape → disabled",
-      "from": {
-        "key_code": "escape",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "left_control → disabled",
-      "from": {
-        "key_code": "left_control",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "left_command → disabled",
-      "from": {
-        "key_code": "left_command",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "right_command → disabled",
-      "from": {
-        "key_code": "right_command",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "right_option → disabled",
-      "from": {
-        "key_code": "right_option",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "left_shift → disabled",
-      "from": {
-        "key_code": "left_shift",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "description": "right_shift → disabled",
-      "from": {
-        "key_code": "right_shift",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
+      "from": { "key_code": "escape", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     }
   ]

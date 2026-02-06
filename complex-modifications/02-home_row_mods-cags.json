@@ -2,6 +2,96 @@
   "description": "02-home_row_mods-cags",
   "manipulators": [
     {
+      "description": "left_control → disabled",
+      "from": {
+        "key_code": "left_control",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_command → disabled",
+      "from": {
+        "key_code": "left_command",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "right_command → disabled",
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "right_option → disabled",
+      "from": {
+        "key_code": "right_option",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_shift → disabled",
+      "from": {
+        "key_code": "left_shift",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "right_shift → disabled",
+      "from": {
+        "key_code": "right_shift",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "vk_none"
+        }
+      ],
+      "type": "basic"
+    },
+    {
       "from": {
         "simultaneous": [
           {
