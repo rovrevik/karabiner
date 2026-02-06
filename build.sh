@@ -9,22 +9,24 @@ KARABINER_CLI="/Library/Application Support/org.pqrs/Karabiner-Elements/bin/kara
 FILES=(
   00-simple.json
   01-home_row_mods-cags.json
-  02-hyper.json
-  03-meh.json
-  04-cursor.json
-  05-numpad.json
-  06-sympad.json
+  02-disable-modifiers.json
+  03-hyper.json
+  04-meh.json
+  05-cursor.json
+  06-numpad.json
+  07-sympad.json
 )
 
-# Rule order in combined JSON: numpad/sympad first (track physical command), then 00/01, then HRM/Hyper/Meh
+# Rule order in combined JSON: numpad/sympad first (track physical command), then 00/01, then disable-modifiers, then HRM/Hyper/Meh/cursor
 COMBINE_ORDER=(
   00-simple.json
-  04-cursor.json
-  05-numpad.json
-  06-sympad.json
+  05-cursor.json
+  06-numpad.json
+  07-sympad.json
   01-home_row_mods-cags.json
-  02-hyper.json
-  03-meh.json
+  02-disable-modifiers.json
+  03-hyper.json
+  04-meh.json
 )
 
 # Lint all files before copying any
