@@ -739,7 +739,7 @@
         }
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 220
+        "basic.to_if_held_down_threshold_milliseconds": 330
       },
       "to_delayed_action": {
         "to_if_canceled": [
@@ -784,7 +784,7 @@
         }
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 220
+        "basic.to_if_held_down_threshold_milliseconds": 370
       },
       "to_delayed_action": {
         "to_if_canceled": [
