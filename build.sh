@@ -7,7 +7,7 @@ TARGET_DIR="$HOME/.config/karabiner/assets/complex_modifications"
 KARABINER_CLI="/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli"
 
 FILES=(
-  00-simple-mods.json
+  00-simple.json
   01-cursor.json
   02-home_row_mods-cags.json
   03-hyper.json
@@ -20,7 +20,7 @@ FILES=(
 COMBINE_ORDER=(
   05-numpad.json
   06-sympad.json
-  00-simple-mods.json
+  00-simple.json
   01-cursor.json
   02-home_row_mods-cags.json
   03-hyper.json

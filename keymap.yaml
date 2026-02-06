@@ -5,7 +5,7 @@ layout:
 layers:
   Base:
     # Row 0: function row
-    - - {type: ghost}        # Esc (disabled in 00-simple-mods)
+    - - {type: ghost}        # Esc (disabled in 00-simple)
       - F1
       - F2
       - F3

@@ -17,7 +17,7 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 
 | File | Purpose |
 |------|---------|
-| `00-simple-mods.json` | Caps→Escape, escape→disabled only |
+| `00-simple.json` | Caps→Escape, escape→disabled only |
 | `01-cursor.json` | Physical left_option + right-hand keys for vim-style navigation (J, K, L, ; → arrows, M, . / → Home/PgDn/PgUp/End). Uses a variable to distinguish physical left_option from home-row-mod S |
 | `02-home_row_mods-cags.json` | CAGS home row mods: A=Ctrl, S=Alt, D=Cmd, F=Shift (left); J=Shift, K=Cmd, L=Alt, ;=Ctrl (right). Also disables physical modifier keys (left_control, left_command, right_command, right_option, left_shift, right_shift). Per-finger hold thresholds derived from ZMK companion config (`corne.keymap`). Includes all simultaneous multi-key modifier combos |
 | `03-hyper.json` | Z and / → Hyper (Shift+Cmd+Opt+Ctrl) on hold (pinky timing from ZMK) |

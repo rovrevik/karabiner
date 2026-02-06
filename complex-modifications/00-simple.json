@@ -1,5 +1,5 @@
 {
-  "description": "00-simple-mods: disabled and remapped",
+  "description": "00-simple: disabled and remapped",
   "manipulators": [
     {
       "description": "caps_lock → escape",
