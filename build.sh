@@ -57,7 +57,9 @@ import json, sys
 rules = []
 for path in sys.argv[1:]:
     with open(path) as f:
-        rules.append(json.load(f))
+        rule = json.load(f)
+    if rule.get('manipulators'):
+        rules.append(rule)
 combined = {'title': 'CAGS Home Row Mods + Navigation', 'rules': rules}
 with open('$OUT_FILE', 'w') as f:
     json.dump(combined, f, indent=2)
