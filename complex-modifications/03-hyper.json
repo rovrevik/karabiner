@@ -6,7 +6,7 @@
         "key_code": "z"
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 370
+        "basic.to_if_held_down_threshold_milliseconds": 265
       },
       "to_delayed_action": {
         "to_if_canceled": [
@@ -40,7 +40,7 @@
         "key_code": "slash"
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 370
+        "basic.to_if_held_down_threshold_milliseconds": 265
       },
       "to_delayed_action": {
         "to_if_canceled": [

@@ -6,7 +6,7 @@
         "key_code": "x"
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 330
+        "basic.to_if_held_down_threshold_milliseconds": 225
       },
       "to_delayed_action": {
         "to_if_canceled": [
@@ -40,7 +40,7 @@
         "key_code": "period"
       },
       "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 330
+        "basic.to_if_held_down_threshold_milliseconds": 225
       },
       "to_delayed_action": {
         "to_if_canceled": [

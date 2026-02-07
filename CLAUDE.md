@@ -34,7 +34,7 @@ Additional files:
 - `build.sh` — Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
 - `out/` — Build artifacts (gitignored). Contains `karabiner-cags.json` and `keymap.svg`.
 
-The combined JSON is built with **rule order** 00, 06, 07, 08, 01, 02, 05, 03, 04 (see `COMBINE_ORDER` in `build.sh`) so that cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command and 05 disables the number row.
+The combined JSON is built with **rule order** 00, 05, 06, 07, 08, 01, 02, 03, 04, 09 (see `COMBINE_ORDER` in `build.sh`) so that cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command, and disable-numbers comes early so its disabling takes precedence.
 
 ### Why `keymap.yaml` is manually maintained
 
