@@ -1,5 +1,5 @@
 {
-  "description": "09-sympad: physical right_command + keys for symbol layer",
+  "description": "09-sympad: right_command => symbol pad",
   "manipulators": [
     {
       "description": "track physical right_command key",
@@ -34,93 +34,125 @@
     },
     {
       "description": "sympad layer: ` → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "grave_accent_and_tilde", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": {
+        "key_code": "grave_accent_and_tilde",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 1 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "1", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "1", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 2 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "2", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "2", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 3 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "3", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "3", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 4 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "4", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "4", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 5 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "5", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "5", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 6 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "6", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "6", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 7 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "7", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "7", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 8 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "8", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "8", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 9 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "9", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "9", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: 0 → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "0", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "0", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: - → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "hyphen", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": { "key_code": "hyphen", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "sympad layer: = → disabled",
-      "conditions": [{"type": "variable_if", "name": "physical_right_command", "value": 1}],
-      "from": {"key_code": "equal_sign", "modifiers": {"optional": ["any"]}},
-      "to": [{"key_code": "vk_none"}],
+      "conditions": [
+        { "type": "variable_if", "name": "physical_right_command", "value": 1 }
+      ],
+      "from": {
+        "key_code": "equal_sign",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {

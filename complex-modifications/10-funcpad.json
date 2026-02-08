@@ -1,5 +1,5 @@
 {
-  "description": "10-funcpad: left_option + right_command (both held) → function keys from letter keys (ZMK FCN_PAD)",
+  "description": "10-funcpad: left_option + right_command => function pad",
   "manipulators": [
     {
       "description": "funcpad: u → F7",

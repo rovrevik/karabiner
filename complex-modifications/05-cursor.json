@@ -1,5 +1,5 @@
 {
-  "description": "05-cursor: physical left_option + right hand navigation",
+  "description": "05-cursor: left_option => right hand navigation",
   "manipulators": [
     {
       "description": "track physical left_option key",

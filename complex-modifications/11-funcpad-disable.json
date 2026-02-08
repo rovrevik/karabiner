@@ -1,5 +1,5 @@
 {
-  "description": "11-funcpad-disable",
+  "description": "11-funcpad-disable: disable function keys",
   "manipulators": [
     {
       "description": "f1 → disabled",

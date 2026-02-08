@@ -1,5 +1,5 @@
 {
-  "description": "02-home_row_mods-disable",
+  "description": "02-home_row_mods-disable: disable HRM modifiers",
   "manipulators": [
     {
       "description": "left_control → disabled",
