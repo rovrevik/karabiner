@@ -1,5 +1,6 @@
 - [Erlendms Karabiner actions - Home row mods](https://github.com/Erlendms/karabiner-actions)
 - [rovrevik ZMK keymap](https://github.com/rovrevik/keyboardhoarders-zmk-config-corne/blob/master/config/corne.keymap)
+- [Apple Magic Keyboard](https://www.apple.com/shop/product/mxcl3ll/a/magic-keyboard-usb-c-us-english)
 
 ## Comparison: this repo vs Erlendms home row mods (CAGS)
 

@@ -1,5 +1,5 @@
 {
-  "description": "08-sympad: physical right_command + keys for symbol layer",
+  "description": "09-sympad: physical right_command + keys for symbol layer",
   "manipulators": [
     {
       "description": "track physical right_command key",

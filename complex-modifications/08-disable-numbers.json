@@ -1,5 +1,5 @@
 {
-  "description": "05-disable-numbers",
+  "description": "08-disable-numbers",
   "manipulators": [
     {
       "description": "` → disabled",
