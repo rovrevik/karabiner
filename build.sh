@@ -27,12 +27,12 @@ FILES=(
 COMBINE_ORDER=(
   00-simple.json
   05-cursor.json
+  10-funcpad.json
+  11-funcpad-disable.json
   06-cursor-disable.json
   07-numpad.json
   08-numbpad-disable.json
   09-sympad.json
-  10-funcpad.json
-  11-funcpad-disable.json
   01-home_row_mods-cags.json
   02-home_row_mods-disable.json
   03-hyper.json
