@@ -5,7 +5,7 @@ layout:
 layers:
   Base:
     # Row 0: function row
-    - - {type: ghost}        # Esc (disabled in 00-simple)
+    - - { type: ghost } # Esc (disabled in 00-simple)
       - F1
       - F2
       - F3
@@ -50,23 +50,23 @@ layers:
       - "]"
       - "\\"
     # Row 3: home row (CAGS mods)
-    - - {t: Esc, h: Esc}    # CapsLock → Esc
-      - {t: A, h: Ctrl}
-      - {t: S, h: Alt}
-      - {t: D, h: Cmd}
-      - {t: F, h: Shift}
+    - - { t: Esc, h: Esc } # CapsLock → Esc
+      - { t: A, h: Ctrl }
+      - { t: S, h: Alt }
+      - { t: D, h: Cmd }
+      - { t: F, h: Shift }
       - G
       - H
-      - {t: J, h: Shift}
-      - {t: K, h: Cmd}
-      - {t: L, h: Alt}
+      - { t: J, h: Shift }
+      - { t: K, h: Cmd }
+      - { t: L, h: Alt }
       - {t: ";", h: Ctrl}
       - "'"
       - Enter
     # Row 4: bottom row (Hyper/Meh)
-    - - {type: ghost}        # LShift (disabled)
-      - {t: Z, h: Hyper}
-      - {t: X, h: Meh}
+    - - { type: ghost } # LShift (disabled)
+      - { t: Z, h: Hyper }
+      - { t: X, h: Meh }
       - C
       - V
       - B
@@ -75,274 +75,361 @@ layers:
       - ","
       - {t: ".", h: Meh}
       - {t: "/", h: Hyper}
-      - {type: ghost}        # RShift (disabled)
+      - { type: ghost } # RShift (disabled)
     # Row 5: modifiers
     - - Fn
-      - {type: ghost}        # LCtrl (disabled in 01)
-      - {h: Cursor}            # physical left_option → cursor layer
-      - {h: NumPad}            # physical left_command → numpad layer
+      - { type: ghost } # LCtrl (disabled in 01)
+      - { h: Cursor } # physical left_option → cursor layer
+      - { h: NumPad } # physical left_command → numpad layer
       - Space
-      - {h: SymPad}            # physical right_command → sympad layer
-      - {type: ghost}        # ROpt (disabled in 01)
-      - Left                 # not disabled in 00/01/02/03; disabled in 04 → ghost on Cursor layer
+      - { h: SymPad } # physical right_command → sympad layer
+      - { type: ghost } # ROpt (disabled in 01)
+      - Left # not disabled in 00/01/02/03; disabled in 04 → ghost on Cursor layer
       - Up
       - Down
       - Right
 
   Cursor:
     # Row 0: function row
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
     # Row 1: number row
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
     # Row 2: QWERTY top
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
     # Row 3: home row — navigation (JKLD→arrows per Karabiner config)
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - Left               # J → Left
-      - Down               # K → Down
-      - Up                 # L → Up
-      - Right              # ; → Right
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - Left # J → Left
+      - Down # K → Down
+      - Up # L → Up
+      - Right # ; → Right
+      - { type: trans }
+      - { type: trans }
     # Row 4: bottom row — Home/PgDn/PgUp/End
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - Home               # M → Home
-      - PgDn               # , → PgDn
-      - PgUp               # . → PgUp
-      - End                # / → End
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - Home # M → Home
+      - PgDn # , → PgDn
+      - PgUp # . → PgUp
+      - End # / → End
+      - { type: trans }
     # Row 5: modifiers
-    - - {type: trans}
-      - {type: trans}
-      - {h: Cursor, type: held}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: ghost}   # Left (disabled in 04-cursor)
-      - {type: ghost}   # Up (disabled in 04-cursor)
-      - {type: ghost}   # Down (disabled in 04-cursor)
-      - {type: ghost}   # Right (disabled in 04-cursor)
+    - - { type: trans }
+      - { type: trans }
+      - { h: Cursor, type: held }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: ghost } # Left (disabled in 04-cursor)
+      - { type: ghost } # Up (disabled in 04-cursor)
+      - { type: ghost } # Down (disabled in 04-cursor)
+      - { type: ghost } # Right (disabled in 04-cursor)
 
   NumPad:
     # Row 0: function row
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
     # Row 1: number row — physical keys ` thru = disabled on layer
-    - - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: trans}
+    - - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: trans }
     # Row 2: `() on left, \789 on right
-    - - {type: trans}
+    - - { type: trans }
       - "`"
-      - {type: ghost}
+      - { type: ghost }
       - "("
       - ")"
-      - {type: trans}
+      - { type: trans }
       - "\\"
       - "7"
       - "8"
       - "9"
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
     # Row 3: [] on left, '456- on right
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
       - {t: "[", h: Cmd}
       - {t: "]", h: Shift}
-      - {type: trans}
+      - { type: trans }
       - "'"
       - {t: "4", h: Shift}
       - {t: "5", h: Cmd}
       - {t: "6", h: Alt}
       - {t: "-", h: Ctrl}
-      - {type: ghost}
-      - {type: trans}
+      - { type: ghost }
+      - { type: trans }
     # Row 4: braces on left, "123= on right
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
       - "{"
       - "}"
-      - {type: trans}
+      - { type: trans }
       - '"'
       - "1"
       - "2"
       - {t: "3", h: Meh}
       - {t: "=", h: Hyper}
-      - {type: trans}
+      - { type: trans }
     # Row 5: modifiers — 0 on right option
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {h: NumPad, type: held}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { h: NumPad, type: held }
+      - { type: trans }
+      - { type: trans }
       - "0"
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
 
   SymPad:
     # Row 0: function row
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
     # Row 1: number row — physical keys ` thru = disabled on layer
-    - - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: trans}
+    - - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: trans }
     # Row 2: ~() on left, |&* on right
-    - - {type: trans}
+    - - { type: trans }
       - "~"
-      - {type: ghost}
+      - { type: ghost }
       - "("
       - ")"
-      - {type: trans}
+      - { type: trans }
       - "|"
       - "&"
       - "*"
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: ghost}
-      - {type: trans}
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: trans }
     # Row 3: [] on left, '$%^_ on right
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
       - {t: "[", h: Cmd}
       - {t: "]", h: Shift}
-      - {type: trans}
+      - { type: trans }
       - "'"
       - {t: "$", h: Shift}
       - {t: "%", h: Cmd}
       - {t: "^", h: Alt}
       - {t: "_", h: Ctrl}
-      - {type: ghost}
-      - {type: trans}
+      - { type: ghost }
+      - { type: trans }
     # Row 4: {} on left, "!@#+ on right
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
       - "{"
       - "}"
-      - {type: trans}
+      - { type: trans }
       - '"'
       - "!"
       - "@"
       - {t: "#", h: Meh}
       - {t: "+", h: Hyper}
-      - {type: trans}
+      - { type: trans }
     # Row 5: modifiers
-    - - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {h: SymPad, type: held}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
-      - {type: trans}
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { h: SymPad, type: held }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+
+  FuncPad:
+    # LOpt + RCmd (both held): 7 8 9 0 → F7–F10, J K L ; → F4–F6 F12, M , . N → F1–F3 F11
+    # Row 0: 14 keys — Esc trans, F1–F12 ghost, Power trans
+    - - { type: trans }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: ghost }
+      - { type: trans }
+    # Row 1: 14 keys (all trans)
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+    # Row 2: 14 keys (      — 7 8 9 0 → F7 F8 F9 F10
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - F7
+      - F8
+      - F9
+      - F10
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+    # Row 3: 14 keys — J K L ; → F4 F5 F6 F12 (per 10-funcpad.json)
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - F4
+      - F5
+      - F6
+      - F12
+      - { type: trans }
+      - { type: trans }
+    # Row 4: 12 keys — M , . / → F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans } # N (no funcpad)
+      - F1 # M
+      - F2 # ,
+      - F3 # .
+      - F11 # /
+      - { type: trans }
+      - { type: trans }
+    # Row 5: 10 keys
+    - - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }
+      - { type: trans }

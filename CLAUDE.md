@@ -27,8 +27,8 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `07-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
 | `08-numbpad-disable.json` | Disables physical number row: \`, 1–0, -, = |
 | `09-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
-| `10-funcpad.json` | Function-key layer. Empty by default; add manipulators as needed |
-| `11-funcpad-disable.json` | Disables physical keys for funcpad (e.g. function row). Empty by default; add manipulators as needed |
+| `10-funcpad.json` | Left_option + right_command (both held) → F1–F12: 7 8 9 0→F7–F10, J K L ;→F4–F6 F12, M , . N→F1–F3 F11 |
+| `11-funcpad-disable.json` | Disables physical F1–F12 (same pattern as numbpad-disable for number row) |
 | `12-thumbs.json` | Thumb-key rules (space and nearby). Empty by default; add manipulators as needed |
 | `13-thumbs-disable.json` | Disables physical keys in the thumb area. Empty by default; add manipulators as needed |
 
