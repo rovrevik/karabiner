@@ -19,13 +19,13 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 |------|---------|
 | `00-simple.json` | Caps→Escape, escape→disabled only |
 | `01-home_row_mods-cags.json` | CAGS home row mods: A=Ctrl, S=Alt, D=Cmd, F=Shift (left); J=Shift, K=Cmd, L=Alt, ;=Ctrl (right). Per-finger hold thresholds derived from ZMK companion config (`corne.keymap`). Includes all simultaneous multi-key modifier combos |
-| `02-disable-modifiers.json` | Disables physical modifier keys: left_control, left_command, right_command, right_option, left_shift, right_shift |
+| `02-home_row_mods-disable.json` | Disables physical modifier keys: left_control, left_command, right_command, right_option, left_shift, right_shift |
 | `03-hyper.json` | Z and / → Hyper (Shift+Cmd+Opt+Ctrl) on hold (pinky timing from ZMK) |
 | `04-meh.json` | X and . → Meh (Shift+Opt+Ctrl) on hold (ring timing from ZMK) |
 | `05-cursor.json` | Physical left_option + right-hand keys for vim-style navigation (J, K, L, ; → arrows, M, . / → Home/PgDn/PgUp/End). Uses a variable to distinguish physical left_option from home-row-mod S |
-| `06-disable-arrows.json` | Disables physical arrow keys: up, down, left, right (cursor layer provides HJKL navigation) |
+| `06-cursor-disable.json` | Disables physical arrow keys: up, down, left, right (cursor layer provides HJKL navigation) |
 | `07-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
-| `08-disable-numbers.json` | Disables physical number row: \`, 1–0, -, = |
+| `08-numbpad-disable.json` | Disables physical number row: \`, 1–0, -, = |
 | `09-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
 | `10-thumbs.json` | Thumb-key rules (space and nearby). Empty by default; add manipulators as needed |
 
@@ -35,7 +35,7 @@ Additional files:
 - `build.sh` — Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
 - `out/` — Build artifacts (gitignored). Contains `karabiner-cags.json` and `keymap.svg`.
 
-The combined JSON is built with **rule order** 00, 05, 06, 07, 08, 09, 01, 02, 03, 04, 10 (see `COMBINE_ORDER` in `build.sh`) so that cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command, and disable-arrows/disable-numbers come early so their disabling takes precedence.
+The combined JSON is built with **rule order** 00, 05, 06, 07, 08, 09, 01, 02, 03, 04, 10 (see `COMBINE_ORDER` in `build.sh`) so that cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command, and cursor-disable/numbpad-disable come early so their disabling takes precedence.
 
 ### Why `keymap.yaml` is manually maintained
 

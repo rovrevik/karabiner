@@ -9,27 +9,27 @@ KARABINER_CLI="/Library/Application Support/org.pqrs/Karabiner-Elements/bin/kara
 FILES=(
   00-simple.json
   01-home_row_mods-cags.json
-  02-disable-modifiers.json
+  02-home_row_mods-disable.json
   03-hyper.json
   04-meh.json
   05-cursor.json
-  06-disable-arrows.json
+  06-cursor-disable.json
   07-numpad.json
-  08-disable-numbers.json
+  08-numbpad-disable.json
   09-sympad.json
   10-thumbs.json
 )
 
-# Rule order in combined JSON: cursor/numpad/sympad first (track physical keys), then 00/01, then disable-modifiers/disable-arrows/disable-numbers, then HRM/Hyper/Meh, thumbs
+# Rule order in combined JSON: cursor/numpad/sympad first (track physical keys), then 00/01, then home_row_mods-disable/cursor-disable/numbpad-disable, then HRM/Hyper/Meh, thumbs
 COMBINE_ORDER=(
   00-simple.json
   05-cursor.json
-  06-disable-arrows.json
+  06-cursor-disable.json
   07-numpad.json
-  08-disable-numbers.json
+  08-numbpad-disable.json
   09-sympad.json
   01-home_row_mods-cags.json
-  02-disable-modifiers.json
+  02-home_row_mods-disable.json
   03-hyper.json
   04-meh.json
   10-thumbs.json

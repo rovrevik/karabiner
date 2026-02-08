@@ -1,5 +1,5 @@
 {
-  "description": "06-disable-arrows",
+  "description": "06-cursor-disable",
   "manipulators": [
     {
       "description": "up_arrow → disabled",

@@ -1,5 +1,5 @@
 {
-  "description": "02-disable-modifiers",
+  "description": "02-home_row_mods-disable",
   "manipulators": [
     {
       "description": "left_control → disabled",
