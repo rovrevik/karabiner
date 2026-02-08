@@ -17,10 +17,13 @@ FILES=(
   07-numpad.json
   08-numbpad-disable.json
   09-sympad.json
-  10-thumbs.json
+  10-funcpad.json
+  11-funcpad-disable.json
+  12-thumbs.json
+  13-thumbs-disable.json
 )
 
-# Rule order in combined JSON: cursor/numpad/sympad first (track physical keys), then 00/01, then home_row_mods-disable/cursor-disable/numbpad-disable, then HRM/Hyper/Meh, thumbs
+# Rule order in combined JSON: cursor/numpad/sympad/funcpad first (track physical keys), then 00/01, then home_row_mods-disable/cursor-disable/numbpad-disable, then HRM/Hyper/Meh, thumbs
 COMBINE_ORDER=(
   00-simple.json
   05-cursor.json
@@ -28,11 +31,14 @@ COMBINE_ORDER=(
   07-numpad.json
   08-numbpad-disable.json
   09-sympad.json
+  10-funcpad.json
+  11-funcpad-disable.json
   01-home_row_mods-cags.json
   02-home_row_mods-disable.json
   03-hyper.json
   04-meh.json
-  10-thumbs.json
+  12-thumbs.json
+  13-thumbs-disable.json
 )
 
 # Lint all files before copying any
