@@ -78,13 +78,13 @@ layers:
       - { type: ghost } # RShift (disabled)
     # Row 5: modifiers
     - - Fn
-      - { type: ghost } # LCtrl (disabled in 01)
-      - { h: Cursor } # physical left_option → cursor layer
-      - { h: NumPad } # physical left_command → numpad layer
+      - LCtrl
+      - LOpt
+      - LCmd
       - Space
-      - { h: SymPad } # physical right_command → sympad layer
-      - { type: ghost } # ROpt (disabled in 01)
-      - Left # not disabled in 00/01/02/03; disabled in 04 → ghost on Cursor layer
+      - RCmd
+      - ROpt
+      - Left
       - Up
       - Down
       - Right
@@ -165,7 +165,7 @@ layers:
     # Row 5: modifiers
     - - { type: trans }
       - { type: trans }
-      - { h: Cursor, type: held }
+      - { type: held }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -252,7 +252,7 @@ layers:
     - - { type: trans }
       - { type: trans }
       - { type: trans }
-      - { h: NumPad, type: held }
+      - { type: held }
       - { type: trans }
       - { type: trans }
       - "0"
@@ -340,7 +340,7 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - { h: SymPad, type: held }
+      - { type: held }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -424,10 +424,10 @@ layers:
       - { type: trans }
     # Row 5: 10 keys
     - - { type: trans }
+      - { type: held }
       - { type: trans }
       - { type: trans }
-      - { type: trans }
-      - { type: trans }
+      - { type: held }
       - { type: trans }
       - { type: trans }
       - { type: trans }
