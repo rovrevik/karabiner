@@ -2,6 +2,15 @@
   "description": "12-thumbs",
   "manipulators": [
     {
+      "description": "left_control → escape",
+      "from": {
+        "key_code": "left_control",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "escape" }],
+      "type": "basic"
+    },
+    {
       "description": "track physical {left_option} key",
       "from": {
         "key_code": "left_option",
@@ -33,21 +42,34 @@
       "type": "basic"
     },
     {
-      "description": "left_control → escape",
-      "from": {
-        "key_code": "left_control",
-        "modifiers": { "optional": ["any"] }
-      },
-      "to": [{ "key_code": "escape" }],
-      "type": "basic"
-    },
-    {
-      "description": "left_command → tab",
+      "description": "track physical {left_command} key",
       "from": {
         "key_code": "left_command",
-        "modifiers": { "optional": ["any"] }
+        "modifiers": {
+          "optional": ["any"]
+        }
       },
-      "to": [{ "key_code": "tab" }],
+      "to": [
+        {
+          "set_variable": {
+            "name": "physical_left_command",
+            "value": 1
+          }
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "physical_left_command",
+            "value": 0
+          }
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "tab"
+        }
+      ],
       "type": "basic"
     },
     {
