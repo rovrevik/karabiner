@@ -50,7 +50,7 @@ layers:
       - "]"
       - "\\"
     # Row 3: home row (CAGS mods)
-    - - { t: Esc, h: Esc } # CapsLock → Esc
+    - - { t: Esc } # CapsLock → Esc
       - { t: A, h: Ctrl }
       - { t: S, h: Alt }
       - { t: D, h: Cmd }
@@ -78,12 +78,12 @@ layers:
       - { type: ghost } # RShift (disabled)
     # Row 5: modifiers
     - - Fn
-      - LCtrl
-      - LOpt
-      - LCmd
+      - { type: ghost } # LCtrl (disabled)
+      - { type: ghost } # LOpt (disabled)
+      - { type: ghost } # LCmd (disabled)
       - Space
-      - RCmd
-      - ROpt
+      - { type: ghost } # RCmd (disabled)
+      - { type: ghost } # ROpt (disabled)
       - Left
       - Up
       - Down
