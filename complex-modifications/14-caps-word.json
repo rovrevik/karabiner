@@ -188,13 +188,13 @@
     {
       "description": "caps_word: space → deactivate + send",
       "type": "basic",
-      "from": { "key_code": "space" },
+      "from": { "key_code": "spacebar" },
       "conditions": [
         { "type": "variable_if", "name": "caps_word", "value": 1 }
       ],
       "to": [
         { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "space" }
+        { "key_code": "spacebar" }
       ]
     },
     {
