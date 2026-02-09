@@ -387,10 +387,10 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - F7
-      - F8
-      - F9
-      - F10
+      - F7 # U
+      - F8 # I
+      - F9 # O
+      - F10 # P
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -402,10 +402,10 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - F4
-      - F5
-      - F6
-      - F12
+      - F4 # J
+      - F5 # K
+      - F6 # L
+      - F12 # ;
       - { type: trans }
       - { type: trans }
     # Row 4: bottom row: 12 keys — M , . / → F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)
@@ -414,12 +414,12 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - { type: trans } # N (no funcpad)
+      - { type: trans }
+      - { type: trans }
       - F1 # M
       - F2 # ,
       - F3 # .
       - F11 # /
-      - { type: trans }
       - { type: trans }
     # Row 5: modifier row: 11 keys
     - - { type: trans }
@@ -436,7 +436,7 @@ layers:
 
   Thumbs:
     # Row 0: function row: 14 keys
-    - - { type: trans }
+    - - { type: ghost }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -464,9 +464,9 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - { type: trans }
+      - { type: ghost }
     # Row 2: QWERTY row: 14 keys
-    - - { type: trans }
+    - - { type: ghost }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -493,7 +493,7 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - { type: trans }
+      - { type: ghost }
     # Row 4: bottom row: 12 keys
     - - { type: trans }
       - { type: trans }
@@ -509,11 +509,11 @@ layers:
       - { type: trans }
     # Row 5: modifier row: 11 keys
     - - { type: trans }
-      - { type: trans }
-      - { type: trans }
-      - { type: trans }
-      - { type: trans }
-      - { type: trans }
+      - { t: Esc }
+      - { type: held, t: Bksp, h: Cursors }
+      - { type: held, t: Tab, h: NumPad }
+      - { t: Enter }
+      - { type: held, t: Space, h: SymPad }
       - { type: trans }
       - { type: trans }
       - { type: trans }
