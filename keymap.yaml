@@ -20,19 +20,19 @@ layers:
       - F12
       - Power
     # Row 1: number row: 14 keys
-    - - "`"
-      - "1"
-      - "2"
-      - "3"
-      - "4"
-      - "5"
-      - "6"
-      - "7"
-      - "8"
-      - "9"
-      - "0"
-      - "-"
-      - "="
+    - - '`'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '0'
+      - '-'
+      - '='
       - Bksp
     # Row 2: QWERTY row: 14 keys
     - - Tab
@@ -46,8 +46,8 @@ layers:
       - I
       - O
       - P
-      - "["
-      - "]"
+      - '['
+      - ']'
       - "\\"
     # Row 3: home row: 13 keys (CAGS mods)
     - - { t: Esc } # CapsLock → Esc
@@ -60,7 +60,7 @@ layers:
       - { t: J, h: Shift }
       - { t: K, h: Cmd }
       - { t: L, h: Alt }
-      - {t: ";", h: Ctrl}
+      - { t: ';', h: Ctrl }
       - "'"
       - Enter
     # Row 4: bottom row: 12 keys (Hyper/Meh)
@@ -72,9 +72,9 @@ layers:
       - B
       - N
       - M
-      - ","
-      - {t: ".", h: Meh}
-      - {t: "/", h: Hyper}
+      - ','
+      - { t: '.', h: Meh }
+      - { t: '/', h: Hyper }
       - { type: ghost } # RShift (disabled)
     # Row 5: modifier row: 11 keys
     - - Fn
@@ -208,15 +208,15 @@ layers:
       - { type: trans }
     # Row 2: QWERTY row: 14 keys `() on left, \789 on right
     - - { type: trans }
-      - "`"
+      - '`'
       - { type: ghost }
-      - "("
-      - ")"
+      - '('
+      - ')'
       - { type: trans }
       - "\\"
-      - "7"
-      - "8"
-      - "9"
+      - '7'
+      - '8'
+      - '9'
       - { type: ghost }
       - { type: ghost }
       - { type: ghost }
@@ -225,28 +225,28 @@ layers:
     - - { type: trans }
       - { type: trans }
       - { type: trans }
-      - {t: "[", h: Cmd}
-      - {t: "]", h: Shift}
+      - { t: '[', h: Cmd }
+      - { t: ']', h: Shift }
       - { type: trans }
       - "'"
-      - {t: "4", h: Shift}
-      - {t: "5", h: Cmd}
-      - {t: "6", h: Alt}
-      - {t: "-", h: Ctrl}
+      - { t: '4', h: Shift }
+      - { t: '5', h: Cmd }
+      - { t: '6', h: Alt }
+      - { t: '-', h: Ctrl }
       - { type: ghost }
       - { type: trans }
     # Row 4: bottom row: 12 keys: braces on left, "123= on right
     - - { type: trans }
       - { type: trans }
       - { type: trans }
-      - "{"
-      - "}"
+      - '{'
+      - '}'
       - { type: trans }
       - '"'
-      - "1"
-      - "2"
-      - {t: "3", h: Meh}
-      - {t: "=", h: Hyper}
+      - '1'
+      - '2'
+      - { t: '3', h: Meh }
+      - { t: '=', h: Hyper }
       - { type: trans }
     # Row 5: modifier row: 11 keys — 0 on right option
     - - { type: trans }
@@ -255,7 +255,7 @@ layers:
       - { type: held }
       - { type: trans }
       - { type: trans }
-      - "0"
+      - '0'
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -294,14 +294,14 @@ layers:
       - { type: trans }
     # Row 2: QWERTY row: 14 keys ~() on left, |&* on right
     - - { type: trans }
-      - "~"
+      - '~'
       - { type: ghost }
-      - "("
-      - ")"
+      - '('
+      - ')'
       - { type: trans }
-      - "|"
-      - "&"
-      - "*"
+      - '|'
+      - '&'
+      - '*'
       - { type: ghost }
       - { type: ghost }
       - { type: ghost }
@@ -311,28 +311,28 @@ layers:
     - - { type: trans }
       - { type: trans }
       - { type: trans }
-      - {t: "[", h: Cmd}
-      - {t: "]", h: Shift}
+      - { t: '[', h: Cmd }
+      - { t: ']', h: Shift }
       - { type: trans }
       - "'"
-      - {t: "$", h: Shift}
-      - {t: "%", h: Cmd}
-      - {t: "^", h: Alt}
-      - {t: "_", h: Ctrl}
+      - { t: '$', h: Shift }
+      - { t: '%', h: Cmd }
+      - { t: '^', h: Alt }
+      - { t: '_', h: Ctrl }
       - { type: ghost }
       - { type: trans }
     # Row 4: bottom row: 12 keys: {} on left, "!@#+ on right
     - - { type: trans }
       - { type: trans }
       - { type: trans }
-      - "{"
-      - "}"
+      - '{'
+      - '}'
       - { type: trans }
       - '"'
-      - "!"
-      - "@"
-      - {t: "#", h: Meh}
-      - {t: "+", h: Hyper}
+      - '!'
+      - '@'
+      - { t: '#', h: Meh }
+      - { t: '+', h: Hyper }
       - { type: trans }
     # Row 5: modifier row: 11 keys
     - - { type: trans }
