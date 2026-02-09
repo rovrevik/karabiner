@@ -21,10 +21,12 @@ FILES=(
   11-funcpad-disable.json
   12-thumbs.json
   13-thumbs-disable.json
+  14-caps-word.json
 )
 
 # Rule order in combined JSON: cursor/numpad/sympad/funcpad first (track physical keys), then 00/01, then home_row_mods-disable/cursor-disable/numbpad-disable, then HRM/Hyper/Meh, thumbs
 COMBINE_ORDER=(
+  14-caps-word.json
   00-simple.json
   12-thumbs.json
   13-thumbs-disable.json
