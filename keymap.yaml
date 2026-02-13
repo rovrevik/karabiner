@@ -33,7 +33,7 @@ layers:
       - '0'
       - '-'
       - '='
-      - Bksp
+      - Delete
     # Row 2: QWERTY row: 14 keys
     - - Tab
       - Q
@@ -62,7 +62,7 @@ layers:
       - { t: L, h: Alt }
       - { t: ';', h: Ctrl }
       - "'"
-      - Enter
+      - Return
     # Row 4: bottom row: 12 keys (Hyper/Meh)
     - - { type: ghost } # LShift (disabled)
       - { t: Z, h: Hyper }
@@ -510,9 +510,9 @@ layers:
     # Row 5: modifier row: 11 keys
     - - { type: trans }
       - { t: Esc }
-      - { type: held, t: Bksp, h: Cursors }
+      - { type: held, t: Delete, h: Cursor }
       - { type: held, t: Tab, h: NumPad }
-      - { t: Enter }
+      - { t: Return }
       - { type: held, t: Space, h: SymPad }
       - { type: trans }
       - { type: trans }
