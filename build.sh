@@ -88,4 +88,7 @@ if [[ "${1:-}" == "--install" ]]; then
   cp "$OUT_FILE" "$TARGET_DIR/karabiner-cags.json"
   echo "Installed → $TARGET_DIR/karabiner-cags.json"
   echo "Enable rules in Karabiner-Elements Preferences → Complex Modifications → Add rule."
+else
+  echo "Not installed. Target: $TARGET_DIR/karabiner-cags.json"
+  echo "Run with --install to copy."
 fi
