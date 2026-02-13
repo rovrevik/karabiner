@@ -306,7 +306,7 @@ layers:
       - { type: ghost }
       - { type: ghost }
       - { type: ghost }
-      - { type: trans }
+      - { type: ghost }
     # Row 3: home row: 13 keys [] on left, '$%^_ on right
     - - { type: trans }
       - { type: trans }
