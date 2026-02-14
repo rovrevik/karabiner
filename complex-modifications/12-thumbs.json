@@ -105,6 +105,36 @@
       "type": "basic"
     },
     {
+      "description": "left_command quick-tap: double-tap-and-hold → repeat tab",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "left_command_quick_tap",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "left_command",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "tab"
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "left_command_quick_tap",
+            "value": 0
+          }
+        }
+      ],
+      "type": "basic"
+    },
+    {
       "description": "track physical {left_command} key",
       "from": {
         "key_code": "left_command",
@@ -131,8 +161,35 @@
       "to_if_alone": [
         {
           "key_code": "tab"
+        },
+        {
+          "set_variable": {
+            "name": "left_command_quick_tap",
+            "value": 1
+          }
         }
       ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "left_command_quick_tap",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "left_command_quick_tap",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 390
+      },
       "type": "basic"
     },
     {
