@@ -79,7 +79,7 @@
       "type": "basic"
     },
     {
-      "description": "space → return",
+      "description": "space → space",
       "from": {
         "key_code": "spacebar",
         "modifiers": {
