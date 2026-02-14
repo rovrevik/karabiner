@@ -5,9 +5,15 @@
       "description": "left_control → escape",
       "from": {
         "key_code": "left_control",
-        "modifiers": { "optional": ["any"] }
+        "modifiers": {
+          "optional": ["any"]
+        }
       },
-      "to": [{ "key_code": "escape" }],
+      "to": [
+        {
+          "key_code": "escape"
+        }
+      ],
       "type": "basic"
     },
     {
@@ -74,17 +80,48 @@
     },
     {
       "description": "space → return",
-      "from": { "key_code": "spacebar", "modifiers": { "optional": ["any"] } },
-      "to": [{ "key_code": "return_or_enter" }],
+      "from": {
+        "key_code": "spacebar",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "spacebar"
+        }
+      ],
       "type": "basic"
     },
     {
-      "description": "right_command → space",
+      "description": "track physical right_command key",
       "from": {
         "key_code": "right_command",
-        "modifiers": { "optional": ["any"] }
+        "modifiers": {
+          "optional": ["any"]
+        }
       },
-      "to": [{ "key_code": "spacebar" }],
+      "to": [
+        {
+          "set_variable": {
+            "name": "physical_right_command",
+            "value": 1
+          }
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "physical_right_command",
+            "value": 0
+          }
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "return_or_enter"
+        }
+      ],
       "type": "basic"
     }
   ]

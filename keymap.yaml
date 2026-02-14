@@ -512,8 +512,8 @@ layers:
       - { t: Esc }
       - { type: held, t: Delete, h: Cursor }
       - { type: held, t: Tab, h: NumPad }
-      - { t: Return }
-      - { type: held, t: Space, h: SymPad }
+      - { t: Space }
+      - { type: held, t: Return, h: SymPad }
       - { type: trans }
       - { type: trans }
       - { type: trans }
