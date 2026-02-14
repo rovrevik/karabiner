@@ -208,6 +208,36 @@
       "type": "basic"
     },
     {
+      "description": "right_command quick-tap: double-tap-and-hold → repeat return",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "right_command_quick_tap",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "right_command",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "return_or_enter"
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "right_command_quick_tap",
+            "value": 0
+          }
+        }
+      ],
+      "type": "basic"
+    },
+    {
       "description": "track physical right_command key",
       "from": {
         "key_code": "right_command",
@@ -234,8 +264,35 @@
       "to_if_alone": [
         {
           "key_code": "return_or_enter"
+        },
+        {
+          "set_variable": {
+            "name": "right_command_quick_tap",
+            "value": 1
+          }
         }
       ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "right_command_quick_tap",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "right_command_quick_tap",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 390
+      },
       "type": "basic"
     }
   ]
