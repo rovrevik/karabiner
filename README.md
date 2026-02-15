@@ -22,4 +22,4 @@ Then enable the rule in Karabiner-Elements -> Preferences -> Complex Modificatio
 
 For full project details, file structure, and conventions, see [CLAUDE.md](CLAUDE.md).
 
-<img src="out/keymap.svg" alt="Keymap layout" width="600">
+<img src="out/keymap.svg" alt="Keymap layout" width="800">
