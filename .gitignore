@@ -1,2 +1,4 @@
 .idea/
 out/
+!out/keymap.svg
+!out/karabiner-cags.json

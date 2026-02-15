@@ -29,7 +29,7 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `09-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
 | `10-funcpad.json` | Left_option + right_command (both held) → F1–F12: 7 8 9 0→F7–F10, J K L ;→F4–F6 F12, M , . N→F1–F3 F11 |
 | `11-funcpad-disable.json` | Disables physical F1–F12 (same pattern as numbpad-disable for number row) |
-| `12-thumbs.json` | Thumb-key rules (space and nearby). Empty by default; add manipulators as needed |
+| `12-thumbs.json` | Thumb-key rules: left_control→escape, left_option tap→backspace/hold→cursor, left_command tap→tab/hold→numpad, right_command tap→return/hold→sympad, space→return |
 | `13-thumbs-disable.json` | Disables physical keys in the thumb area. Empty by default; add manipulators as needed |
 
 Additional files:
@@ -38,7 +38,7 @@ Additional files:
 - `build.sh` — Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
 - `out/` — Build artifacts (gitignored). Contains `karabiner-cags.json` and `keymap.svg`.
 
-The combined JSON is built with **rule order** 00, 05, 06, 07, 08, 09, 10, 11, 01, 02, 03, 04, 12, 13 (see `COMBINE_ORDER` in `build.sh`) so that cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command, and cursor-disable/numbpad-disable come early so their disabling takes precedence.
+The combined JSON is built with **rule order** 14, 00, 12, 13, 10, 11, 05, 06, 07, 08, 09, 01, 02, 03, 04 (see `COMBINE_ORDER` in `build.sh`). Cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command.
 
 ### Why `keymap.yaml` is manually maintained
 

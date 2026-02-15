@@ -1,0 +1,13 @@
+---
+description: "Common preferences"
+alwaysApply: true
+---
+
+- Always start Cursor in plan mode.
+- This project configures Karabiner Elements.
+- The Karabiner configuration is intended to be functionally similar to my ZMK keymap configuration. 
+    - My ZMK keymap configuration in located at https://github.com/KeyboardHoarders/zmk-config-corne
+    - locally in ../keyboardhoarders-zmk-config-corne
+- Always execute ./build.sh --install after changes.
+- Equivalent changes need to be applied to multiple files so that the files  can be enabled an disabled independently.
+- Do not extract rules into separate files unless necessary.
