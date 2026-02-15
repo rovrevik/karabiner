@@ -254,8 +254,8 @@ layers:
       - { type: trans }
       - { type: held }
       - { type: trans }
-      - { type: trans }
       - '0'
+      - { type: trans }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -339,8 +339,8 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-      - { type: trans }
       - { type: held }
+      - { type: trans }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -426,8 +426,8 @@ layers:
       - { type: trans }
       - { type: held }
       - { type: trans }
-      - { type: trans }
       - { type: held }
+      - { type: trans }
       - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -512,8 +512,8 @@ layers:
       - { t: Esc }
       - { type: held, t: Delete, h: Cursor }
       - { type: held, t: Tab, h: NumPad }
-      - { t: Space }
-      - { type: held, t: Return, h: SymPad }
+      - { type: held, t: Space, h: SymPad }
+      - { type: trans }
       - { type: trans }
       - { type: trans }
       - { type: trans }

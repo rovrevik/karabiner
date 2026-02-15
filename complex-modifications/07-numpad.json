@@ -825,7 +825,7 @@
       "type": "basic"
     },
     {
-      "description": "left_command + right_option -> 0",
+      "description": "left_command + right_command -> 0",
       "conditions": [
         {
           "type": "variable_if",
@@ -834,14 +834,28 @@
         }
       ],
       "from": {
-        "key_code": "right_option",
+        "key_code": "right_command",
         "modifiers": {
           "optional": ["any"]
         }
       },
       "to": [
         {
+          "set_variable": {
+            "name": "physical_right_command",
+            "value": 1
+          }
+        },
+        {
           "key_code": "0"
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "physical_right_command",
+            "value": 0
+          }
         }
       ],
       "type": "basic"

@@ -1254,7 +1254,14 @@
           "type": "basic"
         },
         {
-          "description": "space -> space",
+          "description": "spacebar quick-tap: double-tap-and-hold -> repeat space",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "spacebar_quick_tap",
+              "value": 1
+            }
+          ],
           "from": {
             "key_code": "spacebar",
             "modifiers": {
@@ -1268,19 +1275,20 @@
               "key_code": "spacebar"
             }
           ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "spacebar_quick_tap",
+                "value": 0
+              }
+            }
+          ],
           "type": "basic"
         },
         {
-          "description": "right_command quick-tap: double-tap-and-hold -> repeat return",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "right_command_quick_tap",
-              "value": 1
-            }
-          ],
+          "description": "track physical spacebar key",
           "from": {
-            "key_code": "right_command",
+            "key_code": "spacebar",
             "modifiers": {
               "optional": [
                 "any"
@@ -1289,21 +1297,63 @@
           },
           "to": [
             {
-              "key_code": "return_or_enter"
+              "set_variable": {
+                "name": "physical_spacebar",
+                "value": 1
+              }
             }
           ],
           "to_after_key_up": [
             {
               "set_variable": {
-                "name": "right_command_quick_tap",
+                "name": "physical_spacebar",
                 "value": 0
               }
             }
           ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar"
+            },
+            {
+              "set_variable": {
+                "name": "spacebar_quick_tap",
+                "value": 1
+              }
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "spacebar_quick_tap",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "spacebar_quick_tap",
+                  "value": 0
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 390
+          },
           "type": "basic"
         },
         {
           "description": "track physical right_command key",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "physical_left_command",
+              "value": 0
+            }
+          ],
           "from": {
             "key_code": "right_command",
             "modifiers": {
@@ -1330,20 +1380,19 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "return_or_enter"
-            },
+              "key_code": "vk_none"
+            }
+          ],
+          "to_if_held_down": [
             {
-              "set_variable": {
-                "name": "right_command_quick_tap",
-                "value": 1
-              }
+              "key_code": "vk_none"
             }
           ],
           "to_delayed_action": {
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "right_command_quick_tap",
+                  "name": "physical_right_command",
                   "value": 0
                 }
               }
@@ -1351,7 +1400,7 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "right_command_quick_tap",
+                  "name": "physical_right_command",
                   "value": 0
                 }
               }
@@ -1388,23 +1437,6 @@
           "description": "delete -> disabled",
           "from": {
             "key_code": "delete_or_backspace",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "vk_none"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "description": "return -> disabled",
-          "from": {
-            "key_code": "return_or_enter",
             "modifiers": {
               "optional": [
                 "any"
@@ -3358,7 +3390,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + right_option -> 0",
+          "description": "left_command + right_command -> 0",
           "conditions": [
             {
               "type": "variable_if",
@@ -3367,7 +3399,7 @@
             }
           ],
           "from": {
-            "key_code": "right_option",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
                 "any"
@@ -3376,7 +3408,21 @@
           },
           "to": [
             {
+              "set_variable": {
+                "name": "physical_right_command",
+                "value": 1
+              }
+            },
+            {
               "key_code": "0"
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "physical_right_command",
+                "value": 0
+              }
             }
           ],
           "type": "basic"
@@ -3627,47 +3673,14 @@
       ]
     },
     {
-      "description": "09-sympad: right_command -> symbol pad",
+      "description": "09-sympad: spacebar -> symbol pad",
       "manipulators": [
-        {
-          "description": "track physical right_command key",
-          "from": {
-            "key_code": "right_command",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "physical_right_command",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "physical_right_command",
-                "value": 0
-              }
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ],
-          "type": "basic"
-        },
         {
           "description": "sympad layer: ` -> disabled",
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3691,7 +3704,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3715,7 +3728,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3739,7 +3752,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3763,7 +3776,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3787,7 +3800,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3811,7 +3824,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3835,7 +3848,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3859,7 +3872,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3883,7 +3896,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3907,7 +3920,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3931,7 +3944,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3955,7 +3968,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -3979,7 +3992,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4006,7 +4019,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4030,7 +4043,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4057,7 +4070,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4084,7 +4097,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4127,7 +4140,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4170,7 +4183,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4197,7 +4210,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4224,7 +4237,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4251,7 +4264,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4278,7 +4291,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4305,7 +4318,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4329,7 +4342,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4353,7 +4366,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4377,7 +4390,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4401,7 +4414,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4425,7 +4438,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4474,7 +4487,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4523,7 +4536,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4572,7 +4585,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4621,7 +4634,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4645,7 +4658,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4672,7 +4685,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],
@@ -4699,7 +4712,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "physical_right_command",
+              "name": "physical_spacebar",
               "value": 1
             }
           ],

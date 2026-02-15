@@ -193,7 +193,14 @@
       "type": "basic"
     },
     {
-      "description": "space -> space",
+      "description": "spacebar quick-tap: double-tap-and-hold -> repeat space",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "spacebar_quick_tap",
+          "value": 1
+        }
+      ],
       "from": {
         "key_code": "spacebar",
         "modifiers": {
@@ -205,32 +212,10 @@
           "key_code": "spacebar"
         }
       ],
-      "type": "basic"
-    },
-    {
-      "description": "right_command quick-tap: double-tap-and-hold -> repeat return",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "right_command_quick_tap",
-          "value": 1
-        }
-      ],
-      "from": {
-        "key_code": "right_command",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "return_or_enter"
-        }
-      ],
       "to_after_key_up": [
         {
           "set_variable": {
-            "name": "right_command_quick_tap",
+            "name": "spacebar_quick_tap",
             "value": 0
           }
         }
@@ -238,7 +223,72 @@
       "type": "basic"
     },
     {
+      "description": "track physical spacebar key",
+      "from": {
+        "key_code": "spacebar",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "set_variable": {
+            "name": "physical_spacebar",
+            "value": 1
+          }
+        }
+      ],
+      "to_after_key_up": [
+        {
+          "set_variable": {
+            "name": "physical_spacebar",
+            "value": 0
+          }
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "spacebar"
+        },
+        {
+          "set_variable": {
+            "name": "spacebar_quick_tap",
+            "value": 1
+          }
+        }
+      ],
+      "to_delayed_action": {
+        "to_if_invoked": [
+          {
+            "set_variable": {
+              "name": "spacebar_quick_tap",
+              "value": 0
+            }
+          }
+        ],
+        "to_if_canceled": [
+          {
+            "set_variable": {
+              "name": "spacebar_quick_tap",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "parameters": {
+        "basic.to_delayed_action_delay_milliseconds": 390
+      },
+      "type": "basic"
+    },
+    {
       "description": "track physical right_command key",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
+          "value": 0
+        }
+      ],
       "from": {
         "key_code": "right_command",
         "modifiers": {
@@ -263,20 +313,19 @@
       ],
       "to_if_alone": [
         {
-          "key_code": "return_or_enter"
-        },
+          "key_code": "vk_none"
+        }
+      ],
+      "to_if_held_down": [
         {
-          "set_variable": {
-            "name": "right_command_quick_tap",
-            "value": 1
-          }
+          "key_code": "vk_none"
         }
       ],
       "to_delayed_action": {
         "to_if_invoked": [
           {
             "set_variable": {
-              "name": "right_command_quick_tap",
+              "name": "physical_right_command",
               "value": 0
             }
           }
@@ -284,7 +333,7 @@
         "to_if_canceled": [
           {
             "set_variable": {
-              "name": "right_command_quick_tap",
+              "name": "physical_right_command",
               "value": 0
             }
           }
