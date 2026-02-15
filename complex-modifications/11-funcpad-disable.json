@@ -2,73 +2,73 @@
   "description": "11-funcpad-disable: disable function keys",
   "manipulators": [
     {
-      "description": "f1 → disabled",
+      "description": "f1 -> disabled",
       "from": { "key_code": "f1", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f2 → disabled",
+      "description": "f2 -> disabled",
       "from": { "key_code": "f2", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f3 → disabled",
+      "description": "f3 -> disabled",
       "from": { "key_code": "f3", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f4 → disabled",
+      "description": "f4 -> disabled",
       "from": { "key_code": "f4", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f5 → disabled",
+      "description": "f5 -> disabled",
       "from": { "key_code": "f5", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f6 → disabled",
+      "description": "f6 -> disabled",
       "from": { "key_code": "f6", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f7 → disabled",
+      "description": "f7 -> disabled",
       "from": { "key_code": "f7", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f8 → disabled",
+      "description": "f8 -> disabled",
       "from": { "key_code": "f8", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f9 → disabled",
+      "description": "f9 -> disabled",
       "from": { "key_code": "f9", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f10 → disabled",
+      "description": "f10 -> disabled",
       "from": { "key_code": "f10", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f11 → disabled",
+      "description": "f11 -> disabled",
       "from": { "key_code": "f11", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "f12 → disabled",
+      "description": "f12 -> disabled",
       "from": { "key_code": "f12", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"

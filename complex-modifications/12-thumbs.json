@@ -2,7 +2,7 @@
   "description": "12-thumbs",
   "manipulators": [
     {
-      "description": "left_control → escape",
+      "description": "left_control -> escape",
       "from": {
         "key_code": "left_control",
         "modifiers": {
@@ -17,7 +17,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option quick-tap: double-tap-and-hold → repeat backspace",
+      "description": "left_option quick-tap: double-tap-and-hold -> repeat backspace",
       "conditions": [
         {
           "type": "variable_if",
@@ -105,7 +105,7 @@
       "type": "basic"
     },
     {
-      "description": "left_command quick-tap: double-tap-and-hold → repeat tab",
+      "description": "left_command quick-tap: double-tap-and-hold -> repeat tab",
       "conditions": [
         {
           "type": "variable_if",
@@ -193,7 +193,7 @@
       "type": "basic"
     },
     {
-      "description": "space → space",
+      "description": "space -> space",
       "from": {
         "key_code": "spacebar",
         "modifiers": {
@@ -208,7 +208,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command quick-tap: double-tap-and-hold → repeat return",
+      "description": "right_command quick-tap: double-tap-and-hold -> repeat return",
       "conditions": [
         {
           "type": "variable_if",

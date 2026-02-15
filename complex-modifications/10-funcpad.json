@@ -1,8 +1,8 @@
 {
-  "description": "10-funcpad: left_option + right_command => function pad",
+  "description": "10-funcpad: left_option + right_command -> function pad",
   "manipulators": [
     {
-      "description": "funcpad: u → F7",
+      "description": "funcpad: u -> F7",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -12,7 +12,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: i → F8",
+      "description": "funcpad: i -> F8",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -22,7 +22,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: o → F9",
+      "description": "funcpad: o -> F9",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -32,7 +32,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: p → F10",
+      "description": "funcpad: p -> F10",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -42,7 +42,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: j → F4",
+      "description": "funcpad: j -> F4",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -52,7 +52,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: k → F5",
+      "description": "funcpad: k -> F5",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -62,7 +62,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: l → F6",
+      "description": "funcpad: l -> F6",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -72,7 +72,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: ; → F12",
+      "description": "funcpad: ; -> F12",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -82,7 +82,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: m → F1",
+      "description": "funcpad: m -> F1",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -92,7 +92,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: , → F2",
+      "description": "funcpad: , -> F2",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -102,7 +102,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: . → F3",
+      "description": "funcpad: . -> F3",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -112,7 +112,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: / → F11",
+      "description": "funcpad: / -> F11",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }

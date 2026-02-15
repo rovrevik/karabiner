@@ -2,7 +2,7 @@
   "description": "08-numbpad-disable: disable number keys",
   "manipulators": [
     {
-      "description": "` → disabled",
+      "description": "` -> disabled",
       "from": {
         "key_code": "grave_accent_and_tilde",
         "modifiers": { "optional": ["any"] }
@@ -11,73 +11,73 @@
       "type": "basic"
     },
     {
-      "description": "1 → disabled",
+      "description": "1 -> disabled",
       "from": { "key_code": "1", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "2 → disabled",
+      "description": "2 -> disabled",
       "from": { "key_code": "2", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "3 → disabled",
+      "description": "3 -> disabled",
       "from": { "key_code": "3", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "4 → disabled",
+      "description": "4 -> disabled",
       "from": { "key_code": "4", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "5 → disabled",
+      "description": "5 -> disabled",
       "from": { "key_code": "5", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "6 → disabled",
+      "description": "6 -> disabled",
       "from": { "key_code": "6", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "7 → disabled",
+      "description": "7 -> disabled",
       "from": { "key_code": "7", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "8 → disabled",
+      "description": "8 -> disabled",
       "from": { "key_code": "8", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "9 → disabled",
+      "description": "9 -> disabled",
       "from": { "key_code": "9", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "0 → disabled",
+      "description": "0 -> disabled",
       "from": { "key_code": "0", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "- → disabled",
+      "description": "- -> disabled",
       "from": { "key_code": "hyphen", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "= → disabled",
+      "description": "= -> disabled",
       "from": {
         "key_code": "equal_sign",
         "modifiers": { "optional": ["any"] }
@@ -86,7 +86,7 @@
       "type": "basic"
     },
     {
-      "description": "\\ → disabled",
+      "description": "\\ -> disabled",
       "from": {
         "key_code": "backslash",
         "modifiers": { "optional": ["any"] }

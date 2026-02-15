@@ -2,7 +2,7 @@
   "description": "02-home_row_mods-disable: disable HRM modifiers",
   "manipulators": [
     {
-      "description": "left_control → disabled",
+      "description": "left_control -> disabled",
       "from": {
         "key_code": "left_control",
         "modifiers": {
@@ -17,7 +17,7 @@
       "type": "basic"
     },
     {
-      "description": "left_command → disabled",
+      "description": "left_command -> disabled",
       "from": {
         "key_code": "left_command",
         "modifiers": {
@@ -32,7 +32,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command → disabled",
+      "description": "right_command -> disabled",
       "from": {
         "key_code": "right_command",
         "modifiers": {
@@ -47,7 +47,7 @@
       "type": "basic"
     },
     {
-      "description": "right_option → disabled",
+      "description": "right_option -> disabled",
       "from": {
         "key_code": "right_option",
         "modifiers": {
@@ -62,7 +62,7 @@
       "type": "basic"
     },
     {
-      "description": "left_shift → disabled",
+      "description": "left_shift -> disabled",
       "from": {
         "key_code": "left_shift",
         "modifiers": {
@@ -77,7 +77,7 @@
       "type": "basic"
     },
     {
-      "description": "right_shift → disabled",
+      "description": "right_shift -> disabled",
       "from": {
         "key_code": "right_shift",
         "modifiers": {

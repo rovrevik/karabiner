@@ -1,5 +1,5 @@
 {
-  "description": "09-sympad: right_command => symbol pad",
+  "description": "09-sympad: right_command -> symbol pad",
   "manipulators": [
     {
       "description": "track physical right_command key",
@@ -33,7 +33,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: ` → disabled",
+      "description": "sympad layer: ` -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -45,7 +45,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 1 → disabled",
+      "description": "sympad layer: 1 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -54,7 +54,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 2 → disabled",
+      "description": "sympad layer: 2 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -63,7 +63,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 3 → disabled",
+      "description": "sympad layer: 3 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -72,7 +72,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 4 → disabled",
+      "description": "sympad layer: 4 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -81,7 +81,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 5 → disabled",
+      "description": "sympad layer: 5 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -90,7 +90,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 6 → disabled",
+      "description": "sympad layer: 6 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -99,7 +99,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 7 → disabled",
+      "description": "sympad layer: 7 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -108,7 +108,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 8 → disabled",
+      "description": "sympad layer: 8 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -117,7 +117,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 9 → disabled",
+      "description": "sympad layer: 9 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -126,7 +126,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: 0 → disabled",
+      "description": "sympad layer: 0 -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -135,7 +135,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: - → disabled",
+      "description": "sympad layer: - -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -144,7 +144,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: = → disabled",
+      "description": "sympad layer: = -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
       ],
@@ -156,7 +156,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + q → ~",
+      "description": "right_command + q -> ~",
       "conditions": [
         {
           "type": "variable_if",
@@ -179,7 +179,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + w → disabled",
+      "description": "right_command + w -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -201,7 +201,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + e → (",
+      "description": "right_command + e -> (",
       "conditions": [
         {
           "type": "variable_if",
@@ -224,7 +224,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + r → )",
+      "description": "right_command + r -> )",
       "conditions": [
         {
           "type": "variable_if",
@@ -247,7 +247,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + d → tap: [, hold: Cmd",
+      "description": "right_command + d -> tap: [, hold: Cmd",
       "conditions": [
         {
           "type": "variable_if",
@@ -288,7 +288,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + f → tap: ], hold: Shift",
+      "description": "right_command + f -> tap: ], hold: Shift",
       "conditions": [
         {
           "type": "variable_if",
@@ -329,7 +329,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + c → {",
+      "description": "right_command + c -> {",
       "conditions": [
         {
           "type": "variable_if",
@@ -352,7 +352,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + v → }",
+      "description": "right_command + v -> }",
       "conditions": [
         {
           "type": "variable_if",
@@ -375,7 +375,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + y → |",
+      "description": "right_command + y -> |",
       "conditions": [
         {
           "type": "variable_if",
@@ -398,7 +398,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + u → &",
+      "description": "right_command + u -> &",
       "conditions": [
         {
           "type": "variable_if",
@@ -421,7 +421,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + i → *",
+      "description": "right_command + i -> *",
       "conditions": [
         {
           "type": "variable_if",
@@ -444,7 +444,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + o → disabled",
+      "description": "right_command + o -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -466,7 +466,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + p → disabled",
+      "description": "right_command + p -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -488,7 +488,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + [ → disabled",
+      "description": "right_command + [ -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -510,7 +510,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + ] → disabled",
+      "description": "right_command + ] -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -532,7 +532,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + h → '",
+      "description": "right_command + h -> '",
       "conditions": [
         {
           "type": "variable_if",
@@ -554,7 +554,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + j → tap: $, hold: Shift",
+      "description": "right_command + j -> tap: $, hold: Shift",
       "conditions": [
         {
           "type": "variable_if",
@@ -597,7 +597,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + k → tap: %, hold: Cmd",
+      "description": "right_command + k -> tap: %, hold: Cmd",
       "conditions": [
         {
           "type": "variable_if",
@@ -640,7 +640,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + l → tap: ^, hold: Alt",
+      "description": "right_command + l -> tap: ^, hold: Alt",
       "conditions": [
         {
           "type": "variable_if",
@@ -683,7 +683,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + semicolon → tap: _, hold: Ctrl",
+      "description": "right_command + semicolon -> tap: _, hold: Ctrl",
       "conditions": [
         {
           "type": "variable_if",
@@ -726,7 +726,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + quote → disabled",
+      "description": "right_command + quote -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -748,7 +748,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + n → \"",
+      "description": "right_command + n -> \"",
       "conditions": [
         {
           "type": "variable_if",
@@ -771,7 +771,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + m → !",
+      "description": "right_command + m -> !",
       "conditions": [
         {
           "type": "variable_if",
@@ -794,7 +794,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + comma → @",
+      "description": "right_command + comma -> @",
       "conditions": [
         {
           "type": "variable_if",

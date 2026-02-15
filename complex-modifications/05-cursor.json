@@ -1,5 +1,5 @@
 {
-  "description": "05-cursor: left_option => right hand navigation",
+  "description": "05-cursor: left_option -> right hand navigation",
   "manipulators": [
     {
       "description": "track physical left_option key",
@@ -28,7 +28,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + j → left_arrow",
+      "description": "left_option + j -> left_arrow",
       "conditions": [
         {
           "type": "variable_if",
@@ -50,7 +50,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + k → down_arrow",
+      "description": "left_option + k -> down_arrow",
       "conditions": [
         {
           "type": "variable_if",
@@ -72,7 +72,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + l → up_arrow",
+      "description": "left_option + l -> up_arrow",
       "conditions": [
         {
           "type": "variable_if",
@@ -94,7 +94,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + semicolon → right_arrow",
+      "description": "left_option + semicolon -> right_arrow",
       "conditions": [
         {
           "type": "variable_if",
@@ -116,7 +116,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + m → home",
+      "description": "left_option + m -> home",
       "conditions": [
         {
           "type": "variable_if",
@@ -138,7 +138,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + comma → page_down",
+      "description": "left_option + comma -> page_down",
       "conditions": [
         {
           "type": "variable_if",
@@ -160,7 +160,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + period → page_up",
+      "description": "left_option + period -> page_up",
       "conditions": [
         {
           "type": "variable_if",
@@ -182,7 +182,7 @@
       "type": "basic"
     },
     {
-      "description": "left_option + slash → end",
+      "description": "left_option + slash -> end",
       "conditions": [
         {
           "type": "variable_if",

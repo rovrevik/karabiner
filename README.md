@@ -18,7 +18,7 @@ This aligns the Apple Magic Keyboard with my Corne ZMK keymap by remapping the b
 ```bash
 ./build.sh --install
 ```
-Then enable the rule in Karabiner-Elements → Preferences → Complex Modifications → Add rule.
+Then enable the rule in Karabiner-Elements -> Preferences -> Complex Modifications -> Add rule.
 
 For full project details, file structure, and conventions, see [CLAUDE.md](CLAUDE.md).
 

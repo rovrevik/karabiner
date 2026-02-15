@@ -2,13 +2,13 @@
   "description": "00-simple: disabled and remapped",
   "manipulators": [
     {
-      "description": "caps_lock → escape",
+      "description": "caps_lock -> escape",
       "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "escape" }],
       "type": "basic"
     },
     {
-      "description": "escape → disabled",
+      "description": "escape -> disabled",
       "from": { "key_code": "escape", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"

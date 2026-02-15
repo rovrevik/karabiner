@@ -5,7 +5,7 @@
       "description": "14-caps-word: ZMK-style caps word",
       "manipulators": [
         {
-          "description": "caps_lock + left_option held, caps_word on \u2192 turn off",
+          "description": "caps_lock + left_option held, caps_word on -> turn off",
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "description": "caps_lock + left_option held \u2192 caps_word on",
+          "description": "caps_lock + left_option held -> caps_word on",
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
@@ -64,7 +64,7 @@
           ]
         },
         {
-          "description": "caps_lock tap (left_option not held) \u2192 escape",
+          "description": "caps_lock tap (left_option not held) -> escape",
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
@@ -634,7 +634,7 @@
           ]
         },
         {
-          "description": "caps_word: space \u2192 deactivate + send",
+          "description": "caps_word: space -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "spacebar"
@@ -659,7 +659,7 @@
           ]
         },
         {
-          "description": "caps_word: return \u2192 deactivate + send",
+          "description": "caps_word: return -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "return_or_enter"
@@ -684,7 +684,7 @@
           ]
         },
         {
-          "description": "caps_word: tab \u2192 deactivate + send",
+          "description": "caps_word: tab -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "tab"
@@ -709,7 +709,7 @@
           ]
         },
         {
-          "description": "caps_word: escape \u2192 deactivate + send",
+          "description": "caps_word: escape -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "escape"
@@ -734,7 +734,7 @@
           ]
         },
         {
-          "description": "caps_word: comma \u2192 deactivate + send",
+          "description": "caps_word: comma -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "comma"
@@ -759,7 +759,7 @@
           ]
         },
         {
-          "description": "caps_word: period \u2192 deactivate + send",
+          "description": "caps_word: period -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "period"
@@ -784,7 +784,7 @@
           ]
         },
         {
-          "description": "caps_word: semicolon \u2192 deactivate + send",
+          "description": "caps_word: semicolon -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "semicolon"
@@ -809,7 +809,7 @@
           ]
         },
         {
-          "description": "caps_word: quote \u2192 deactivate + send",
+          "description": "caps_word: quote -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "quote"
@@ -834,7 +834,7 @@
           ]
         },
         {
-          "description": "caps_word: open_bracket \u2192 deactivate + send",
+          "description": "caps_word: open_bracket -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "open_bracket"
@@ -859,7 +859,7 @@
           ]
         },
         {
-          "description": "caps_word: close_bracket \u2192 deactivate + send",
+          "description": "caps_word: close_bracket -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "close_bracket"
@@ -884,7 +884,7 @@
           ]
         },
         {
-          "description": "caps_word: backslash \u2192 deactivate + send",
+          "description": "caps_word: backslash -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "backslash"
@@ -909,7 +909,7 @@
           ]
         },
         {
-          "description": "caps_word: grave \u2192 deactivate + send",
+          "description": "caps_word: grave -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "grave_accent_and_tilde"
@@ -934,7 +934,7 @@
           ]
         },
         {
-          "description": "caps_word: minus \u2192 deactivate + send",
+          "description": "caps_word: minus -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "minus"
@@ -959,7 +959,7 @@
           ]
         },
         {
-          "description": "caps_word: equal_sign \u2192 deactivate + send",
+          "description": "caps_word: equal_sign -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "equal_sign"
@@ -984,7 +984,7 @@
           ]
         },
         {
-          "description": "caps_word: slash \u2192 deactivate + send",
+          "description": "caps_word: slash -> deactivate + send",
           "type": "basic",
           "from": {
             "key_code": "slash"
@@ -1014,7 +1014,7 @@
       "description": "00-simple: disabled and remapped",
       "manipulators": [
         {
-          "description": "caps_lock \u2192 escape",
+          "description": "caps_lock -> escape",
           "from": {
             "key_code": "caps_lock",
             "modifiers": {
@@ -1031,7 +1031,7 @@
           "type": "basic"
         },
         {
-          "description": "escape \u2192 disabled",
+          "description": "escape -> disabled",
           "from": {
             "key_code": "escape",
             "modifiers": {
@@ -1053,7 +1053,7 @@
       "description": "12-thumbs",
       "manipulators": [
         {
-          "description": "left_control \u2192 escape",
+          "description": "left_control -> escape",
           "from": {
             "key_code": "left_control",
             "modifiers": {
@@ -1070,7 +1070,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option quick-tap: double-tap-and-hold \u2192 repeat backspace",
+          "description": "left_option quick-tap: double-tap-and-hold -> repeat backspace",
           "conditions": [
             {
               "type": "variable_if",
@@ -1162,7 +1162,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command quick-tap: double-tap-and-hold \u2192 repeat tab",
+          "description": "left_command quick-tap: double-tap-and-hold -> repeat tab",
           "conditions": [
             {
               "type": "variable_if",
@@ -1254,7 +1254,7 @@
           "type": "basic"
         },
         {
-          "description": "space \u2192 space",
+          "description": "space -> space",
           "from": {
             "key_code": "spacebar",
             "modifiers": {
@@ -1271,7 +1271,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command quick-tap: double-tap-and-hold \u2192 repeat return",
+          "description": "right_command quick-tap: double-tap-and-hold -> repeat return",
           "conditions": [
             {
               "type": "variable_if",
@@ -1368,7 +1368,7 @@
       "description": "13-thumbs-disable",
       "manipulators": [
         {
-          "description": "tab \u2192 disabled",
+          "description": "tab -> disabled",
           "from": {
             "key_code": "tab",
             "modifiers": {
@@ -1385,7 +1385,7 @@
           "type": "basic"
         },
         {
-          "description": "delete \u2192 disabled",
+          "description": "delete -> disabled",
           "from": {
             "key_code": "delete_or_backspace",
             "modifiers": {
@@ -1402,7 +1402,7 @@
           "type": "basic"
         },
         {
-          "description": "return \u2192 disabled",
+          "description": "return -> disabled",
           "from": {
             "key_code": "return_or_enter",
             "modifiers": {
@@ -1421,10 +1421,10 @@
       ]
     },
     {
-      "description": "10-funcpad: left_option + right_command => function pad",
+      "description": "10-funcpad: left_option + right_command -> function pad",
       "manipulators": [
         {
-          "description": "funcpad: u \u2192 F7",
+          "description": "funcpad: u -> F7",
           "conditions": [
             {
               "type": "variable_if",
@@ -1453,7 +1453,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: i \u2192 F8",
+          "description": "funcpad: i -> F8",
           "conditions": [
             {
               "type": "variable_if",
@@ -1482,7 +1482,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: o \u2192 F9",
+          "description": "funcpad: o -> F9",
           "conditions": [
             {
               "type": "variable_if",
@@ -1511,7 +1511,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: p \u2192 F10",
+          "description": "funcpad: p -> F10",
           "conditions": [
             {
               "type": "variable_if",
@@ -1540,7 +1540,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: j \u2192 F4",
+          "description": "funcpad: j -> F4",
           "conditions": [
             {
               "type": "variable_if",
@@ -1569,7 +1569,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: k \u2192 F5",
+          "description": "funcpad: k -> F5",
           "conditions": [
             {
               "type": "variable_if",
@@ -1598,7 +1598,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: l \u2192 F6",
+          "description": "funcpad: l -> F6",
           "conditions": [
             {
               "type": "variable_if",
@@ -1627,7 +1627,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: ; \u2192 F12",
+          "description": "funcpad: ; -> F12",
           "conditions": [
             {
               "type": "variable_if",
@@ -1656,7 +1656,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: m \u2192 F1",
+          "description": "funcpad: m -> F1",
           "conditions": [
             {
               "type": "variable_if",
@@ -1685,7 +1685,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: , \u2192 F2",
+          "description": "funcpad: , -> F2",
           "conditions": [
             {
               "type": "variable_if",
@@ -1714,7 +1714,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: . \u2192 F3",
+          "description": "funcpad: . -> F3",
           "conditions": [
             {
               "type": "variable_if",
@@ -1743,7 +1743,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: / \u2192 F11",
+          "description": "funcpad: / -> F11",
           "conditions": [
             {
               "type": "variable_if",
@@ -1777,7 +1777,7 @@
       "description": "11-funcpad-disable: disable function keys",
       "manipulators": [
         {
-          "description": "f1 \u2192 disabled",
+          "description": "f1 -> disabled",
           "from": {
             "key_code": "f1",
             "modifiers": {
@@ -1794,7 +1794,7 @@
           "type": "basic"
         },
         {
-          "description": "f2 \u2192 disabled",
+          "description": "f2 -> disabled",
           "from": {
             "key_code": "f2",
             "modifiers": {
@@ -1811,7 +1811,7 @@
           "type": "basic"
         },
         {
-          "description": "f3 \u2192 disabled",
+          "description": "f3 -> disabled",
           "from": {
             "key_code": "f3",
             "modifiers": {
@@ -1828,7 +1828,7 @@
           "type": "basic"
         },
         {
-          "description": "f4 \u2192 disabled",
+          "description": "f4 -> disabled",
           "from": {
             "key_code": "f4",
             "modifiers": {
@@ -1845,7 +1845,7 @@
           "type": "basic"
         },
         {
-          "description": "f5 \u2192 disabled",
+          "description": "f5 -> disabled",
           "from": {
             "key_code": "f5",
             "modifiers": {
@@ -1862,7 +1862,7 @@
           "type": "basic"
         },
         {
-          "description": "f6 \u2192 disabled",
+          "description": "f6 -> disabled",
           "from": {
             "key_code": "f6",
             "modifiers": {
@@ -1879,7 +1879,7 @@
           "type": "basic"
         },
         {
-          "description": "f7 \u2192 disabled",
+          "description": "f7 -> disabled",
           "from": {
             "key_code": "f7",
             "modifiers": {
@@ -1896,7 +1896,7 @@
           "type": "basic"
         },
         {
-          "description": "f8 \u2192 disabled",
+          "description": "f8 -> disabled",
           "from": {
             "key_code": "f8",
             "modifiers": {
@@ -1913,7 +1913,7 @@
           "type": "basic"
         },
         {
-          "description": "f9 \u2192 disabled",
+          "description": "f9 -> disabled",
           "from": {
             "key_code": "f9",
             "modifiers": {
@@ -1930,7 +1930,7 @@
           "type": "basic"
         },
         {
-          "description": "f10 \u2192 disabled",
+          "description": "f10 -> disabled",
           "from": {
             "key_code": "f10",
             "modifiers": {
@@ -1947,7 +1947,7 @@
           "type": "basic"
         },
         {
-          "description": "f11 \u2192 disabled",
+          "description": "f11 -> disabled",
           "from": {
             "key_code": "f11",
             "modifiers": {
@@ -1964,7 +1964,7 @@
           "type": "basic"
         },
         {
-          "description": "f12 \u2192 disabled",
+          "description": "f12 -> disabled",
           "from": {
             "key_code": "f12",
             "modifiers": {
@@ -1983,7 +1983,7 @@
       ]
     },
     {
-      "description": "05-cursor: left_option => right hand navigation",
+      "description": "05-cursor: left_option -> right hand navigation",
       "manipulators": [
         {
           "description": "track physical left_option key",
@@ -2014,7 +2014,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + j \u2192 left_arrow",
+          "description": "left_option + j -> left_arrow",
           "conditions": [
             {
               "type": "variable_if",
@@ -2038,7 +2038,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + k \u2192 down_arrow",
+          "description": "left_option + k -> down_arrow",
           "conditions": [
             {
               "type": "variable_if",
@@ -2062,7 +2062,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + l \u2192 up_arrow",
+          "description": "left_option + l -> up_arrow",
           "conditions": [
             {
               "type": "variable_if",
@@ -2086,7 +2086,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + semicolon \u2192 right_arrow",
+          "description": "left_option + semicolon -> right_arrow",
           "conditions": [
             {
               "type": "variable_if",
@@ -2110,7 +2110,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + m \u2192 home",
+          "description": "left_option + m -> home",
           "conditions": [
             {
               "type": "variable_if",
@@ -2134,7 +2134,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + comma \u2192 page_down",
+          "description": "left_option + comma -> page_down",
           "conditions": [
             {
               "type": "variable_if",
@@ -2158,7 +2158,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + period \u2192 page_up",
+          "description": "left_option + period -> page_up",
           "conditions": [
             {
               "type": "variable_if",
@@ -2182,7 +2182,7 @@
           "type": "basic"
         },
         {
-          "description": "left_option + slash \u2192 end",
+          "description": "left_option + slash -> end",
           "conditions": [
             {
               "type": "variable_if",
@@ -2211,7 +2211,7 @@
       "description": "06-cursor-disable: disable cursor key cluster",
       "manipulators": [
         {
-          "description": "up_arrow \u2192 disabled",
+          "description": "up_arrow -> disabled",
           "from": {
             "key_code": "up_arrow",
             "modifiers": {
@@ -2228,7 +2228,7 @@
           "type": "basic"
         },
         {
-          "description": "down_arrow \u2192 disabled",
+          "description": "down_arrow -> disabled",
           "from": {
             "key_code": "down_arrow",
             "modifiers": {
@@ -2245,7 +2245,7 @@
           "type": "basic"
         },
         {
-          "description": "left_arrow \u2192 disabled",
+          "description": "left_arrow -> disabled",
           "from": {
             "key_code": "left_arrow",
             "modifiers": {
@@ -2262,7 +2262,7 @@
           "type": "basic"
         },
         {
-          "description": "right_arrow \u2192 disabled",
+          "description": "right_arrow -> disabled",
           "from": {
             "key_code": "right_arrow",
             "modifiers": {
@@ -2281,7 +2281,7 @@
       ]
     },
     {
-      "description": "07-numpad: left_command => number pad",
+      "description": "07-numpad: left_command -> number pad",
       "manipulators": [
         {
           "description": "track physical left_command key",
@@ -2317,7 +2317,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: ` \u2192 disabled",
+          "description": "numpad layer: ` -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2341,7 +2341,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 1 \u2192 disabled",
+          "description": "numpad layer: 1 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2365,7 +2365,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 2 \u2192 disabled",
+          "description": "numpad layer: 2 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2389,7 +2389,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 3 \u2192 disabled",
+          "description": "numpad layer: 3 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2413,7 +2413,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 4 \u2192 disabled",
+          "description": "numpad layer: 4 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2437,7 +2437,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 5 \u2192 disabled",
+          "description": "numpad layer: 5 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2461,7 +2461,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 6 \u2192 disabled",
+          "description": "numpad layer: 6 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2485,7 +2485,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 7 \u2192 disabled",
+          "description": "numpad layer: 7 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2509,7 +2509,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 8 \u2192 disabled",
+          "description": "numpad layer: 8 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2533,7 +2533,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 9 \u2192 disabled",
+          "description": "numpad layer: 9 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2557,7 +2557,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: 0 \u2192 disabled",
+          "description": "numpad layer: 0 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2581,7 +2581,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: - \u2192 disabled",
+          "description": "numpad layer: - -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2605,7 +2605,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: = \u2192 disabled",
+          "description": "numpad layer: = -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2629,7 +2629,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + q \u2192 `",
+          "description": "left_command + q -> `",
           "conditions": [
             {
               "type": "variable_if",
@@ -2653,7 +2653,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + w \u2192 disabled",
+          "description": "left_command + w -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2677,7 +2677,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + e \u2192 (",
+          "description": "left_command + e -> (",
           "conditions": [
             {
               "type": "variable_if",
@@ -2704,7 +2704,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + r \u2192 )",
+          "description": "left_command + r -> )",
           "conditions": [
             {
               "type": "variable_if",
@@ -2731,7 +2731,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + d \u2192 tap: [, hold: Cmd",
+          "description": "left_command + d -> tap: [, hold: Cmd",
           "conditions": [
             {
               "type": "variable_if",
@@ -2774,7 +2774,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + f \u2192 tap: ], hold: Shift",
+          "description": "left_command + f -> tap: ], hold: Shift",
           "conditions": [
             {
               "type": "variable_if",
@@ -2817,7 +2817,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + c \u2192 {",
+          "description": "left_command + c -> {",
           "conditions": [
             {
               "type": "variable_if",
@@ -2844,7 +2844,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + v \u2192 }",
+          "description": "left_command + v -> }",
           "conditions": [
             {
               "type": "variable_if",
@@ -2871,7 +2871,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + y \u2192 \\",
+          "description": "left_command + y -> \\",
           "conditions": [
             {
               "type": "variable_if",
@@ -2895,7 +2895,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + u \u2192 7",
+          "description": "left_command + u -> 7",
           "conditions": [
             {
               "type": "variable_if",
@@ -2919,7 +2919,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + i \u2192 8",
+          "description": "left_command + i -> 8",
           "conditions": [
             {
               "type": "variable_if",
@@ -2943,7 +2943,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + o \u2192 9",
+          "description": "left_command + o -> 9",
           "conditions": [
             {
               "type": "variable_if",
@@ -2967,7 +2967,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + [ \u2192 disabled",
+          "description": "left_command + [ -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2991,7 +2991,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + ] \u2192 disabled",
+          "description": "left_command + ] -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3015,7 +3015,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + \\ \u2192 disabled",
+          "description": "left_command + \\ -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3039,7 +3039,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + p \u2192 disabled",
+          "description": "left_command + p -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3063,7 +3063,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + h \u2192 '",
+          "description": "left_command + h -> '",
           "conditions": [
             {
               "type": "variable_if",
@@ -3087,7 +3087,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + j \u2192 tap: 4, hold: Shift",
+          "description": "left_command + j -> tap: 4, hold: Shift",
           "conditions": [
             {
               "type": "variable_if",
@@ -3130,7 +3130,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + k \u2192 tap: 5, hold: Cmd",
+          "description": "left_command + k -> tap: 5, hold: Cmd",
           "conditions": [
             {
               "type": "variable_if",
@@ -3173,7 +3173,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + l \u2192 tap: 6, hold: Alt",
+          "description": "left_command + l -> tap: 6, hold: Alt",
           "conditions": [
             {
               "type": "variable_if",
@@ -3216,7 +3216,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + semicolon \u2192 tap: -, hold: Ctrl",
+          "description": "left_command + semicolon -> tap: -, hold: Ctrl",
           "conditions": [
             {
               "type": "variable_if",
@@ -3259,7 +3259,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + quote \u2192 disabled",
+          "description": "left_command + quote -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3283,7 +3283,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + n \u2192 \"",
+          "description": "left_command + n -> \"",
           "conditions": [
             {
               "type": "variable_if",
@@ -3310,7 +3310,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + m \u2192 1",
+          "description": "left_command + m -> 1",
           "conditions": [
             {
               "type": "variable_if",
@@ -3334,7 +3334,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + comma \u2192 2",
+          "description": "left_command + comma -> 2",
           "conditions": [
             {
               "type": "variable_if",
@@ -3358,7 +3358,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + right_option \u2192 0",
+          "description": "left_command + right_option -> 0",
           "conditions": [
             {
               "type": "variable_if",
@@ -3387,7 +3387,7 @@
       "description": "08-numbpad-disable: disable number keys",
       "manipulators": [
         {
-          "description": "` \u2192 disabled",
+          "description": "` -> disabled",
           "from": {
             "key_code": "grave_accent_and_tilde",
             "modifiers": {
@@ -3404,7 +3404,7 @@
           "type": "basic"
         },
         {
-          "description": "1 \u2192 disabled",
+          "description": "1 -> disabled",
           "from": {
             "key_code": "1",
             "modifiers": {
@@ -3421,7 +3421,7 @@
           "type": "basic"
         },
         {
-          "description": "2 \u2192 disabled",
+          "description": "2 -> disabled",
           "from": {
             "key_code": "2",
             "modifiers": {
@@ -3438,7 +3438,7 @@
           "type": "basic"
         },
         {
-          "description": "3 \u2192 disabled",
+          "description": "3 -> disabled",
           "from": {
             "key_code": "3",
             "modifiers": {
@@ -3455,7 +3455,7 @@
           "type": "basic"
         },
         {
-          "description": "4 \u2192 disabled",
+          "description": "4 -> disabled",
           "from": {
             "key_code": "4",
             "modifiers": {
@@ -3472,7 +3472,7 @@
           "type": "basic"
         },
         {
-          "description": "5 \u2192 disabled",
+          "description": "5 -> disabled",
           "from": {
             "key_code": "5",
             "modifiers": {
@@ -3489,7 +3489,7 @@
           "type": "basic"
         },
         {
-          "description": "6 \u2192 disabled",
+          "description": "6 -> disabled",
           "from": {
             "key_code": "6",
             "modifiers": {
@@ -3506,7 +3506,7 @@
           "type": "basic"
         },
         {
-          "description": "7 \u2192 disabled",
+          "description": "7 -> disabled",
           "from": {
             "key_code": "7",
             "modifiers": {
@@ -3523,7 +3523,7 @@
           "type": "basic"
         },
         {
-          "description": "8 \u2192 disabled",
+          "description": "8 -> disabled",
           "from": {
             "key_code": "8",
             "modifiers": {
@@ -3540,7 +3540,7 @@
           "type": "basic"
         },
         {
-          "description": "9 \u2192 disabled",
+          "description": "9 -> disabled",
           "from": {
             "key_code": "9",
             "modifiers": {
@@ -3557,7 +3557,7 @@
           "type": "basic"
         },
         {
-          "description": "0 \u2192 disabled",
+          "description": "0 -> disabled",
           "from": {
             "key_code": "0",
             "modifiers": {
@@ -3574,7 +3574,7 @@
           "type": "basic"
         },
         {
-          "description": "- \u2192 disabled",
+          "description": "- -> disabled",
           "from": {
             "key_code": "hyphen",
             "modifiers": {
@@ -3591,7 +3591,7 @@
           "type": "basic"
         },
         {
-          "description": "= \u2192 disabled",
+          "description": "= -> disabled",
           "from": {
             "key_code": "equal_sign",
             "modifiers": {
@@ -3608,7 +3608,7 @@
           "type": "basic"
         },
         {
-          "description": "\\ \u2192 disabled",
+          "description": "\\ -> disabled",
           "from": {
             "key_code": "backslash",
             "modifiers": {
@@ -3627,7 +3627,7 @@
       ]
     },
     {
-      "description": "09-sympad: right_command => symbol pad",
+      "description": "09-sympad: right_command -> symbol pad",
       "manipulators": [
         {
           "description": "track physical right_command key",
@@ -3663,7 +3663,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: ` \u2192 disabled",
+          "description": "sympad layer: ` -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3687,7 +3687,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 1 \u2192 disabled",
+          "description": "sympad layer: 1 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3711,7 +3711,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 2 \u2192 disabled",
+          "description": "sympad layer: 2 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3735,7 +3735,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 3 \u2192 disabled",
+          "description": "sympad layer: 3 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3759,7 +3759,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 4 \u2192 disabled",
+          "description": "sympad layer: 4 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3783,7 +3783,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 5 \u2192 disabled",
+          "description": "sympad layer: 5 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3807,7 +3807,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 6 \u2192 disabled",
+          "description": "sympad layer: 6 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3831,7 +3831,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 7 \u2192 disabled",
+          "description": "sympad layer: 7 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3855,7 +3855,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 8 \u2192 disabled",
+          "description": "sympad layer: 8 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3879,7 +3879,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 9 \u2192 disabled",
+          "description": "sympad layer: 9 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3903,7 +3903,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: 0 \u2192 disabled",
+          "description": "sympad layer: 0 -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3927,7 +3927,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: - \u2192 disabled",
+          "description": "sympad layer: - -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3951,7 +3951,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: = \u2192 disabled",
+          "description": "sympad layer: = -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3975,7 +3975,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + q \u2192 ~",
+          "description": "right_command + q -> ~",
           "conditions": [
             {
               "type": "variable_if",
@@ -4002,7 +4002,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + w \u2192 disabled",
+          "description": "right_command + w -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4026,7 +4026,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + e \u2192 (",
+          "description": "right_command + e -> (",
           "conditions": [
             {
               "type": "variable_if",
@@ -4053,7 +4053,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + r \u2192 )",
+          "description": "right_command + r -> )",
           "conditions": [
             {
               "type": "variable_if",
@@ -4080,7 +4080,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + d \u2192 tap: [, hold: Cmd",
+          "description": "right_command + d -> tap: [, hold: Cmd",
           "conditions": [
             {
               "type": "variable_if",
@@ -4123,7 +4123,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + f \u2192 tap: ], hold: Shift",
+          "description": "right_command + f -> tap: ], hold: Shift",
           "conditions": [
             {
               "type": "variable_if",
@@ -4166,7 +4166,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + c \u2192 {",
+          "description": "right_command + c -> {",
           "conditions": [
             {
               "type": "variable_if",
@@ -4193,7 +4193,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + v \u2192 }",
+          "description": "right_command + v -> }",
           "conditions": [
             {
               "type": "variable_if",
@@ -4220,7 +4220,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + y \u2192 |",
+          "description": "right_command + y -> |",
           "conditions": [
             {
               "type": "variable_if",
@@ -4247,7 +4247,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + u \u2192 &",
+          "description": "right_command + u -> &",
           "conditions": [
             {
               "type": "variable_if",
@@ -4274,7 +4274,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + i \u2192 *",
+          "description": "right_command + i -> *",
           "conditions": [
             {
               "type": "variable_if",
@@ -4301,7 +4301,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + o \u2192 disabled",
+          "description": "right_command + o -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4325,7 +4325,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + p \u2192 disabled",
+          "description": "right_command + p -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4349,7 +4349,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + [ \u2192 disabled",
+          "description": "right_command + [ -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4373,7 +4373,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + ] \u2192 disabled",
+          "description": "right_command + ] -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4397,7 +4397,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + h \u2192 '",
+          "description": "right_command + h -> '",
           "conditions": [
             {
               "type": "variable_if",
@@ -4421,7 +4421,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + j \u2192 tap: $, hold: Shift",
+          "description": "right_command + j -> tap: $, hold: Shift",
           "conditions": [
             {
               "type": "variable_if",
@@ -4470,7 +4470,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + k \u2192 tap: %, hold: Cmd",
+          "description": "right_command + k -> tap: %, hold: Cmd",
           "conditions": [
             {
               "type": "variable_if",
@@ -4519,7 +4519,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + l \u2192 tap: ^, hold: Alt",
+          "description": "right_command + l -> tap: ^, hold: Alt",
           "conditions": [
             {
               "type": "variable_if",
@@ -4568,7 +4568,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + semicolon \u2192 tap: _, hold: Ctrl",
+          "description": "right_command + semicolon -> tap: _, hold: Ctrl",
           "conditions": [
             {
               "type": "variable_if",
@@ -4617,7 +4617,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + quote \u2192 disabled",
+          "description": "right_command + quote -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4641,7 +4641,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + n \u2192 \"",
+          "description": "right_command + n -> \"",
           "conditions": [
             {
               "type": "variable_if",
@@ -4668,7 +4668,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + m \u2192 !",
+          "description": "right_command + m -> !",
           "conditions": [
             {
               "type": "variable_if",
@@ -4695,7 +4695,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + comma \u2192 @",
+          "description": "right_command + comma -> @",
           "conditions": [
             {
               "type": "variable_if",
@@ -5973,7 +5973,7 @@
       "description": "02-home_row_mods-disable: disable HRM modifiers",
       "manipulators": [
         {
-          "description": "left_control \u2192 disabled",
+          "description": "left_control -> disabled",
           "from": {
             "key_code": "left_control",
             "modifiers": {
@@ -5990,7 +5990,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command \u2192 disabled",
+          "description": "left_command -> disabled",
           "from": {
             "key_code": "left_command",
             "modifiers": {
@@ -6007,7 +6007,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command \u2192 disabled",
+          "description": "right_command -> disabled",
           "from": {
             "key_code": "right_command",
             "modifiers": {
@@ -6024,7 +6024,7 @@
           "type": "basic"
         },
         {
-          "description": "right_option \u2192 disabled",
+          "description": "right_option -> disabled",
           "from": {
             "key_code": "right_option",
             "modifiers": {
@@ -6041,7 +6041,7 @@
           "type": "basic"
         },
         {
-          "description": "left_shift \u2192 disabled",
+          "description": "left_shift -> disabled",
           "from": {
             "key_code": "left_shift",
             "modifiers": {
@@ -6058,7 +6058,7 @@
           "type": "basic"
         },
         {
-          "description": "right_shift \u2192 disabled",
+          "description": "right_shift -> disabled",
           "from": {
             "key_code": "right_shift",
             "modifiers": {

@@ -2,13 +2,13 @@
   "description": "13-thumbs-disable",
   "manipulators": [
     {
-      "description": "tab → disabled",
+      "description": "tab -> disabled",
       "from": { "key_code": "tab", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "delete → disabled",
+      "description": "delete -> disabled",
       "from": {
         "key_code": "delete_or_backspace",
         "modifiers": { "optional": ["any"] }
@@ -17,7 +17,7 @@
       "type": "basic"
     },
     {
-      "description": "return → disabled",
+      "description": "return -> disabled",
       "from": {
         "key_code": "return_or_enter",
         "modifiers": { "optional": ["any"] }

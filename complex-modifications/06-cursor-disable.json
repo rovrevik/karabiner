@@ -2,7 +2,7 @@
   "description": "06-cursor-disable: disable cursor key cluster",
   "manipulators": [
     {
-      "description": "up_arrow → disabled",
+      "description": "up_arrow -> disabled",
       "from": {
         "key_code": "up_arrow",
         "modifiers": {
@@ -17,7 +17,7 @@
       "type": "basic"
     },
     {
-      "description": "down_arrow → disabled",
+      "description": "down_arrow -> disabled",
       "from": {
         "key_code": "down_arrow",
         "modifiers": {
@@ -32,7 +32,7 @@
       "type": "basic"
     },
     {
-      "description": "left_arrow → disabled",
+      "description": "left_arrow -> disabled",
       "from": {
         "key_code": "left_arrow",
         "modifiers": {
@@ -47,7 +47,7 @@
       "type": "basic"
     },
     {
-      "description": "right_arrow → disabled",
+      "description": "right_arrow -> disabled",
       "from": {
         "key_code": "right_arrow",
         "modifiers": {
