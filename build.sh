@@ -52,7 +52,7 @@ for file in "${FILES[@]}"; do
   fi
   echo "Linting $file..."
   if ! "$KARABINER_CLI" --lint-complex-modifications "$src"; then
-    echo "ERROR: Lint failed for $file — aborting."
+    echo "ERROR: Lint failed for $file - aborting."
     exit 1
   fi
 done

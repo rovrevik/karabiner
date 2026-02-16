@@ -135,7 +135,7 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-    # Row 3: home row: 13 keys — navigation (JKLD->arrows per Karabiner config)
+    # Row 3: home row: 13 keys - navigation (JKLD->arrows per Karabiner config)
     - - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -149,7 +149,7 @@ layers:
       - Right # semicolon -> Right
       - { type: trans }
       - { type: trans }
-    # Row 4: bottom row: 12 keys  — Home/PgDn/PgUp/End
+    # Row 4: bottom row: 12 keys  - Home/PgDn/PgUp/End
     - - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -248,7 +248,7 @@ layers:
       - { t: '3', h: Meh }
       - { t: '=', h: Hyper }
       - { type: trans }
-    # Row 5: modifier row: 11 keys — 0 on right option
+    # Row 5: modifier row: 11 keys - 0 on right option
     - - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -348,7 +348,7 @@ layers:
       - { type: trans }
 
   FuncPad:
-    # LOpt + RCmd (both held): 7 8 9 0 -> F7–F10, J K L semicolon -> F4–F6 F12, M comma period slash -> F1–F3 F11
+    # LOpt + RCmd (both held): 7 8 9 0 -> F7-F10, J K L semicolon -> F4-F6 F12, M comma period slash -> F1-F3 F11
     # Row 0: function row: 14 keys
     - - { type: trans }
       - { type: ghost }
@@ -379,7 +379,7 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-    # Row 2: QWERTY row: 14 keys (      — 7 8 9 0 -> F7 F8 F9 F10
+    # Row 2: QWERTY row: 14 keys (      - 7 8 9 0 -> F7 F8 F9 F10
     - - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -394,7 +394,7 @@ layers:
       - { type: trans }
       - { type: trans }
       - { type: trans }
-    # Row 3: home row: 13 keys — J K L semicolon -> F4 F5 F6 F12 (per 10-funcpad.json)
+    # Row 3: home row: 13 keys - J K L semicolon -> F4 F5 F6 F12 (per 10-funcpad.json)
     - - { type: trans }
       - { type: trans }
       - { type: trans }
@@ -408,7 +408,7 @@ layers:
       - F12 # ;
       - { type: trans }
       - { type: trans }
-    # Row 4: bottom row: 12 keys — M comma period slash -> F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)
+    # Row 4: bottom row: 12 keys - M comma period slash -> F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)
     - - { type: trans }
       - { type: trans }
       - { type: trans }
