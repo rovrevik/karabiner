@@ -158,9 +158,9 @@ layers:
       - { type: trans }
       - { type: trans }
       - Home # M -> Home
-      - PgDn # , -> PgDn
-      - PgUp # . -> PgUp
-      - End # / -> End
+      - PgDn # comma -> PgDn
+      - PgUp # period -> PgUp
+      - End # slash -> End
       - { type: trans }
     # Row 5: modifier row: 11 keys
     - - { type: trans }
@@ -348,7 +348,7 @@ layers:
       - { type: trans }
 
   FuncPad:
-    # LOpt + RCmd (both held): 7 8 9 0 -> F7–F10, J K L ; -> F4–F6 F12, M , . N -> F1–F3 F11
+    # LOpt + RCmd (both held): 7 8 9 0 -> F7–F10, J K L ; -> F4–F6 F12, M comma period N -> F1–F3 F11
     # Row 0: function row: 14 keys
     - - { type: trans }
       - { type: ghost }
@@ -408,7 +408,7 @@ layers:
       - F12 # ;
       - { type: trans }
       - { type: trans }
-    # Row 4: bottom row: 12 keys — M , . / -> F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)
+    # Row 4: bottom row: 12 keys — M comma period slash -> F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)
     - - { type: trans }
       - { type: trans }
       - { type: trans }

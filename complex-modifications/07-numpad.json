@@ -825,6 +825,50 @@
       "type": "basic"
     },
     {
+      "description": "left_command + period -> 3",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "period",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "3"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "left_command + slash -> =",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_left_command",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "slash",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "equal_sign"
+        }
+      ],
+      "type": "basic"
+    },
+    {
       "description": "left_command + right_command -> 0",
       "conditions": [
         {

@@ -92,7 +92,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: , -> F2",
+      "description": "funcpad: comma -> F2",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -102,7 +102,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: . -> F3",
+      "description": "funcpad: period -> F3",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }
@@ -112,7 +112,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: / -> F11",
+      "description": "funcpad: slash -> F11",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }

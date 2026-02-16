@@ -784,6 +784,52 @@
         }
       ],
       "type": "basic"
+    },
+    {
+      "description": "right_command + period -> #",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_spacebar",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "period",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "3",
+          "modifiers": ["left_shift"]
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "description": "right_command + slash -> =",
+      "conditions": [
+        {
+          "type": "variable_if",
+          "name": "physical_spacebar",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "slash",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "equal_sign",
+          "modifiers": ["left_shift"]
+        }
+      ],
+      "type": "basic"
     }
   ]
 }

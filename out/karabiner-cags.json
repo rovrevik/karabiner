@@ -1717,7 +1717,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: , -> F2",
+          "description": "funcpad: comma -> F2",
           "conditions": [
             {
               "type": "variable_if",
@@ -1746,7 +1746,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: . -> F3",
+          "description": "funcpad: period -> F3",
           "conditions": [
             {
               "type": "variable_if",
@@ -1775,7 +1775,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: / -> F11",
+          "description": "funcpad: slash -> F11",
           "conditions": [
             {
               "type": "variable_if",
@@ -3390,6 +3390,54 @@
           "type": "basic"
         },
         {
+          "description": "left_command + period -> 3",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "physical_left_command",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "description": "left_command + slash -> =",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "physical_left_command",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign"
+            }
+          ],
+          "type": "basic"
+        },
+        {
           "description": "left_command + right_command -> 0",
           "conditions": [
             {
@@ -4727,6 +4775,60 @@
           "to": [
             {
               "key_code": "2",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "description": "right_command + period -> #",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "physical_spacebar",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "description": "right_command + slash -> =",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "physical_spacebar",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign",
               "modifiers": [
                 "left_shift"
               ]
