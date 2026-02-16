@@ -2,7 +2,7 @@
   "description": "09-sympad: spacebar -> symbol pad",
   "manipulators": [
     {
-      "description": "sympad layer: ` -> disabled",
+      "description": "sympad layer: grave -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_spacebar", "value": 1 }
       ],
@@ -104,7 +104,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: - -> disabled",
+      "description": "sympad layer: hyphen -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_spacebar", "value": 1 }
       ],
@@ -113,7 +113,7 @@
       "type": "basic"
     },
     {
-      "description": "sympad layer: = -> disabled",
+      "description": "sympad layer: equal_sign -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_spacebar", "value": 1 }
       ],

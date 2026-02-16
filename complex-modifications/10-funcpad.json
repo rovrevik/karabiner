@@ -72,7 +72,7 @@
       "type": "basic"
     },
     {
-      "description": "funcpad: ; -> F12",
+      "description": "funcpad: semicolon -> F12",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_option", "value": 1 },
         { "type": "variable_if", "name": "physical_right_command", "value": 1 }

@@ -2,7 +2,7 @@
   "description": "08-numbpad-disable: disable number keys",
   "manipulators": [
     {
-      "description": "` -> disabled",
+      "description": "grave -> disabled",
       "from": {
         "key_code": "grave_accent_and_tilde",
         "modifiers": { "optional": ["any"] }
@@ -71,13 +71,13 @@
       "type": "basic"
     },
     {
-      "description": "- -> disabled",
+      "description": "hyphen -> disabled",
       "from": { "key_code": "hyphen", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "= -> disabled",
+      "description": "equal_sign -> disabled",
       "from": {
         "key_code": "equal_sign",
         "modifiers": { "optional": ["any"] }
@@ -86,7 +86,7 @@
       "type": "basic"
     },
     {
-      "description": "\\ -> disabled",
+      "description": "backslash -> disabled",
       "from": {
         "key_code": "backslash",
         "modifiers": { "optional": ["any"] }

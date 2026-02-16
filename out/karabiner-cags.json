@@ -1659,7 +1659,7 @@
           "type": "basic"
         },
         {
-          "description": "funcpad: ; -> F12",
+          "description": "funcpad: semicolon -> F12",
           "conditions": [
             {
               "type": "variable_if",
@@ -2349,7 +2349,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: ` -> disabled",
+          "description": "numpad layer: grave -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2613,7 +2613,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: - -> disabled",
+          "description": "numpad layer: hyphen -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -2637,7 +2637,7 @@
           "type": "basic"
         },
         {
-          "description": "numpad layer: = -> disabled",
+          "description": "numpad layer: equal_sign -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3047,7 +3047,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + \\ -> disabled",
+          "description": "left_command + backslash -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3481,7 +3481,7 @@
       "description": "08-numbpad-disable: disable number keys",
       "manipulators": [
         {
-          "description": "` -> disabled",
+          "description": "grave -> disabled",
           "from": {
             "key_code": "grave_accent_and_tilde",
             "modifiers": {
@@ -3668,7 +3668,7 @@
           "type": "basic"
         },
         {
-          "description": "- -> disabled",
+          "description": "hyphen -> disabled",
           "from": {
             "key_code": "hyphen",
             "modifiers": {
@@ -3685,7 +3685,7 @@
           "type": "basic"
         },
         {
-          "description": "= -> disabled",
+          "description": "equal_sign -> disabled",
           "from": {
             "key_code": "equal_sign",
             "modifiers": {
@@ -3702,7 +3702,7 @@
           "type": "basic"
         },
         {
-          "description": "\\ -> disabled",
+          "description": "backslash -> disabled",
           "from": {
             "key_code": "backslash",
             "modifiers": {
@@ -3724,7 +3724,7 @@
       "description": "09-sympad: spacebar -> symbol pad",
       "manipulators": [
         {
-          "description": "sympad layer: ` -> disabled",
+          "description": "sympad layer: grave -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -3988,7 +3988,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: - -> disabled",
+          "description": "sympad layer: hyphen -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4012,7 +4012,7 @@
           "type": "basic"
         },
         {
-          "description": "sympad layer: = -> disabled",
+          "description": "sympad layer: equal_sign -> disabled",
           "conditions": [
             {
               "type": "variable_if",

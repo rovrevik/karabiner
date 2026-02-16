@@ -33,7 +33,7 @@
       "type": "basic"
     },
     {
-      "description": "numpad layer: ` -> disabled",
+      "description": "numpad layer: grave -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_command", "value": 1 }
       ],
@@ -135,7 +135,7 @@
       "type": "basic"
     },
     {
-      "description": "numpad layer: - -> disabled",
+      "description": "numpad layer: hyphen -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_command", "value": 1 }
       ],
@@ -144,7 +144,7 @@
       "type": "basic"
     },
     {
-      "description": "numpad layer: = -> disabled",
+      "description": "numpad layer: equal_sign -> disabled",
       "conditions": [
         { "type": "variable_if", "name": "physical_left_command", "value": 1 }
       ],
@@ -506,7 +506,7 @@
       "type": "basic"
     },
     {
-      "description": "left_command + \\ -> disabled",
+      "description": "left_command + backslash -> disabled",
       "conditions": [
         {
           "type": "variable_if",
