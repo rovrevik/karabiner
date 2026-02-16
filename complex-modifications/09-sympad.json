@@ -457,7 +457,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + [ -> disabled",
+      "description": "right_command + open_bracket -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -479,7 +479,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + ] -> disabled",
+      "description": "right_command + close_bracket -> disabled",
       "conditions": [
         {
           "type": "variable_if",

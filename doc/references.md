@@ -4,7 +4,7 @@
 
 ## Comparison: this repo vs Erlendms home row mods (CAGS)
 
-Relevant Erlendms file: [home_row_mods-ct_o_c_s.json](https://github.com/Erlendms/karabiner-actions/blob/main/actions/home_row_mods-ct_o_c_s.json) - same CAGS mapping (A=Ctrl, S=Option, D=Command, F=Shift left; J/K/L/; mirrored right).
+Relevant Erlendms file: [home_row_mods-ct_o_c_s.json](https://github.com/Erlendms/karabiner-actions/blob/main/actions/home_row_mods-ct_o_c_s.json) - same CAGS mapping (A=Ctrl, S=Option, D=Command, F=Shift left; J/K/L/semicolon mirrored right).
 
 ### Same
 

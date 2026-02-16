@@ -405,7 +405,7 @@ layers:
       - F4 # J
       - F5 # K
       - F6 # L
-      - F12 # ;
+      - F12 # semicolon
       - { type: trans }
       - { type: trans }
     # Row 4: bottom row: 12 keys - M comma period slash -> F1 F2 F3 F11 (per 10-funcpad: uiop jkl; m,./)

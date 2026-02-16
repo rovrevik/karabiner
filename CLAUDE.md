@@ -25,7 +25,7 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `05-cursor.json` | Physical left_option + right-hand keys for vim-style navigation (J, K, L, semicolon -> arrows, M, comma, period, slash -> Home/PgDn/PgUp/End). Uses a variable to distinguish physical left_option from home-row-mod S |
 | `06-cursor-disable.json` | Disables physical arrow keys: up, down, left, right (cursor layer provides HJKL navigation) |
 | `07-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
-| `08-numbpad-disable.json` | Disables physical number row: \`, 1-0, -, = |
+| `08-numbpad-disable.json` | Disables physical number row: grave, 1-0, hyphen, equal_sign |
 | `09-sympad.json` | Physical right_command (tap: spacebar) + keys for symbol layer (symbols, punctuation). Uses variable `physical_right_command` to distinguish from home-row-mod K |
 | `10-funcpad.json` | Left_option + right_command (both held) -> F1-F12: 7 8 9 0->F7-F10, J K L semicolon->F4-F6 F12, M comma period slash->F1-F3 F11 |
 | `11-funcpad-disable.json` | Disables physical F1-F12 (same pattern as numbpad-disable for number row) |
