@@ -786,47 +786,83 @@
       "type": "basic"
     },
     {
-      "description": "spacebar + period -> #",
+      "description": "spacebar + period -> #, hold: Meh",
       "conditions": [
-        {
-          "type": "variable_if",
-          "name": "physical_spacebar",
-          "value": 1
-        }
+        { "type": "variable_if", "name": "physical_spacebar", "value": 1 }
       ],
       "from": {
         "key_code": "period",
-        "modifiers": {
-          "optional": ["any"]
-        }
+        "modifiers": { "optional": ["any"] }
       },
-      "to": [
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 150
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "3",
+            "modifiers": ["left_shift"]
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
         {
+          "halt": true,
           "key_code": "3",
           "modifiers": ["left_shift"]
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_shift",
+          "modifiers": ["right_option", "right_control"]
         }
       ],
       "type": "basic"
     },
     {
-      "description": "spacebar + slash -> =",
+      "description": "spacebar + slash -> +, hold: Hyper",
       "conditions": [
-        {
-          "type": "variable_if",
-          "name": "physical_spacebar",
-          "value": 1
-        }
+        { "type": "variable_if", "name": "physical_spacebar", "value": 1 }
       ],
       "from": {
         "key_code": "slash",
-        "modifiers": {
-          "optional": ["any"]
-        }
+        "modifiers": { "optional": ["any"] }
       },
-      "to": [
+      "parameters": {
+        "basic.to_if_held_down_threshold_milliseconds": 190
+      },
+      "to_delayed_action": {
+        "to_if_canceled": [
+          {
+            "key_code": "equal_sign",
+            "modifiers": ["left_shift"]
+          }
+        ],
+        "to_if_invoked": [
+          {
+            "key_code": "vk_none"
+          }
+        ]
+      },
+      "to_if_alone": [
         {
+          "halt": true,
           "key_code": "equal_sign",
           "modifiers": ["left_shift"]
+        }
+      ],
+      "to_if_held_down": [
+        {
+          "halt": true,
+          "key_code": "right_shift",
+          "modifiers": ["left_command", "left_option", "left_control"]
         }
       ],
       "type": "basic"

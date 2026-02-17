@@ -3390,7 +3390,7 @@
           "type": "basic"
         },
         {
-          "description": "left_command + period -> 3",
+          "description": "left_command + period -> 3, hold: Meh",
           "conditions": [
             {
               "type": "variable_if",
@@ -3406,15 +3406,41 @@
               ]
             }
           },
-          "to": [
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "3"
+              }
+            ],
+            "to_if_invoked": [
+              {
+                "key_code": "vk_none"
+              }
+            ]
+          },
+          "to_if_alone": [
             {
+              "halt": true,
               "key_code": "3"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "halt": true,
+              "key_code": "right_shift",
+              "modifiers": [
+                "right_option",
+                "right_control"
+              ]
             }
           ],
           "type": "basic"
         },
         {
-          "description": "left_command + slash -> =",
+          "description": "left_command + slash -> =, hold: Hyper",
           "conditions": [
             {
               "type": "variable_if",
@@ -3430,47 +3456,36 @@
               ]
             }
           },
-          "to": [
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 190
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "equal_sign"
+              }
+            ],
+            "to_if_invoked": [
+              {
+                "key_code": "vk_none"
+              }
+            ]
+          },
+          "to_if_alone": [
             {
+              "halt": true,
               "key_code": "equal_sign"
             }
           ],
-          "type": "basic"
-        },
-        {
-          "description": "left_command + right_command -> 0",
-          "conditions": [
+          "to_if_held_down": [
             {
-              "type": "variable_if",
-              "name": "physical_left_command",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "right_command",
-            "modifiers": {
-              "optional": [
-                "any"
+              "halt": true,
+              "key_code": "right_shift",
+              "modifiers": [
+                "left_command",
+                "left_option",
+                "left_control"
               ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "physical_right_command",
-                "value": 1
-              }
-            },
-            {
-              "key_code": "0"
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "physical_right_command",
-                "value": 0
-              }
             }
           ],
           "type": "basic"
@@ -4036,7 +4051,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + q -> ~",
+          "description": "spacebar + q -> ~",
           "conditions": [
             {
               "type": "variable_if",
@@ -4063,7 +4078,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + w -> disabled",
+          "description": "spacebar + w -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4087,7 +4102,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + e -> (",
+          "description": "spacebar + e -> (",
           "conditions": [
             {
               "type": "variable_if",
@@ -4114,7 +4129,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + r -> )",
+          "description": "spacebar + r -> )",
           "conditions": [
             {
               "type": "variable_if",
@@ -4141,7 +4156,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + d -> tap: [, hold: Cmd",
+          "description": "spacebar + d -> tap: [, hold: Cmd",
           "conditions": [
             {
               "type": "variable_if",
@@ -4184,7 +4199,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + f -> tap: ], hold: Shift",
+          "description": "spacebar + f -> tap: ], hold: Shift",
           "conditions": [
             {
               "type": "variable_if",
@@ -4227,7 +4242,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + c -> {",
+          "description": "spacebar + c -> {",
           "conditions": [
             {
               "type": "variable_if",
@@ -4254,7 +4269,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + v -> }",
+          "description": "spacebar + v -> }",
           "conditions": [
             {
               "type": "variable_if",
@@ -4281,7 +4296,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + y -> |",
+          "description": "spacebar + y -> |",
           "conditions": [
             {
               "type": "variable_if",
@@ -4308,7 +4323,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + u -> &",
+          "description": "spacebar + u -> &",
           "conditions": [
             {
               "type": "variable_if",
@@ -4335,7 +4350,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + i -> *",
+          "description": "spacebar + i -> *",
           "conditions": [
             {
               "type": "variable_if",
@@ -4362,7 +4377,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + o -> disabled",
+          "description": "spacebar + o -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4386,7 +4401,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + p -> disabled",
+          "description": "spacebar + p -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4410,7 +4425,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + open_bracket -> disabled",
+          "description": "spacebar + open_bracket -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4434,7 +4449,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + close_bracket -> disabled",
+          "description": "spacebar + close_bracket -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4458,7 +4473,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + h -> '",
+          "description": "spacebar + h -> '",
           "conditions": [
             {
               "type": "variable_if",
@@ -4482,7 +4497,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + j -> tap: $, hold: Shift",
+          "description": "spacebar + j -> tap: $, hold: Shift",
           "conditions": [
             {
               "type": "variable_if",
@@ -4531,7 +4546,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + k -> tap: %, hold: Cmd",
+          "description": "spacebar + k -> tap: %, hold: Cmd",
           "conditions": [
             {
               "type": "variable_if",
@@ -4580,7 +4595,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + l -> tap: ^, hold: Alt",
+          "description": "spacebar + l -> tap: ^, hold: Alt",
           "conditions": [
             {
               "type": "variable_if",
@@ -4629,7 +4644,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + semicolon -> tap: _, hold: Ctrl",
+          "description": "spacebar + semicolon -> tap: _, hold: Ctrl",
           "conditions": [
             {
               "type": "variable_if",
@@ -4678,7 +4693,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + quote -> disabled",
+          "description": "spacebar + quote -> disabled",
           "conditions": [
             {
               "type": "variable_if",
@@ -4702,7 +4717,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + n -> \"",
+          "description": "spacebar + n -> \"",
           "conditions": [
             {
               "type": "variable_if",
@@ -4729,7 +4744,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + m -> !",
+          "description": "spacebar + m -> !",
           "conditions": [
             {
               "type": "variable_if",
@@ -4756,7 +4771,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + comma -> @",
+          "description": "spacebar + comma -> @",
           "conditions": [
             {
               "type": "variable_if",
@@ -4783,7 +4798,7 @@
           "type": "basic"
         },
         {
-          "description": "right_command + period -> #",
+          "description": "spacebar + period -> #, hold: Meh",
           "conditions": [
             {
               "type": "variable_if",
@@ -4799,18 +4814,47 @@
               ]
             }
           },
-          "to": [
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "3",
+                "modifiers": [
+                  "left_shift"
+                ]
+              }
+            ],
+            "to_if_invoked": [
+              {
+                "key_code": "vk_none"
+              }
+            ]
+          },
+          "to_if_alone": [
             {
+              "halt": true,
               "key_code": "3",
               "modifiers": [
                 "left_shift"
               ]
             }
           ],
+          "to_if_held_down": [
+            {
+              "halt": true,
+              "key_code": "right_shift",
+              "modifiers": [
+                "right_option",
+                "right_control"
+              ]
+            }
+          ],
           "type": "basic"
         },
         {
-          "description": "right_command + slash -> =",
+          "description": "spacebar + slash -> +, hold: Hyper",
           "conditions": [
             {
               "type": "variable_if",
@@ -4826,11 +4870,41 @@
               ]
             }
           },
-          "to": [
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 190
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "equal_sign",
+                "modifiers": [
+                  "left_shift"
+                ]
+              }
+            ],
+            "to_if_invoked": [
+              {
+                "key_code": "vk_none"
+              }
+            ]
+          },
+          "to_if_alone": [
             {
+              "halt": true,
               "key_code": "equal_sign",
               "modifiers": [
                 "left_shift"
+              ]
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "halt": true,
+              "key_code": "right_shift",
+              "modifiers": [
+                "left_command",
+                "left_option",
+                "left_control"
               ]
             }
           ],
