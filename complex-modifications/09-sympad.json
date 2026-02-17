@@ -125,7 +125,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + q -> ~",
+      "description": "spacebar + q -> ~",
       "conditions": [
         {
           "type": "variable_if",
@@ -148,7 +148,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + w -> disabled",
+      "description": "spacebar + w -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -170,7 +170,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + e -> (",
+      "description": "spacebar + e -> (",
       "conditions": [
         {
           "type": "variable_if",
@@ -193,7 +193,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + r -> )",
+      "description": "spacebar + r -> )",
       "conditions": [
         {
           "type": "variable_if",
@@ -216,7 +216,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + d -> tap: [, hold: Cmd",
+      "description": "spacebar + d -> tap: [, hold: Cmd",
       "conditions": [
         {
           "type": "variable_if",
@@ -257,7 +257,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + f -> tap: ], hold: Shift",
+      "description": "spacebar + f -> tap: ], hold: Shift",
       "conditions": [
         {
           "type": "variable_if",
@@ -298,7 +298,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + c -> {",
+      "description": "spacebar + c -> {",
       "conditions": [
         {
           "type": "variable_if",
@@ -321,7 +321,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + v -> }",
+      "description": "spacebar + v -> }",
       "conditions": [
         {
           "type": "variable_if",
@@ -344,7 +344,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + y -> |",
+      "description": "spacebar + y -> |",
       "conditions": [
         {
           "type": "variable_if",
@@ -367,7 +367,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + u -> &",
+      "description": "spacebar + u -> &",
       "conditions": [
         {
           "type": "variable_if",
@@ -390,7 +390,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + i -> *",
+      "description": "spacebar + i -> *",
       "conditions": [
         {
           "type": "variable_if",
@@ -413,7 +413,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + o -> disabled",
+      "description": "spacebar + o -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -435,7 +435,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + p -> disabled",
+      "description": "spacebar + p -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -457,7 +457,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + open_bracket -> disabled",
+      "description": "spacebar + open_bracket -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -479,7 +479,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + close_bracket -> disabled",
+      "description": "spacebar + close_bracket -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -501,7 +501,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + h -> '",
+      "description": "spacebar + h -> '",
       "conditions": [
         {
           "type": "variable_if",
@@ -523,7 +523,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + j -> tap: $, hold: Shift",
+      "description": "spacebar + j -> tap: $, hold: Shift",
       "conditions": [
         {
           "type": "variable_if",
@@ -566,7 +566,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + k -> tap: %, hold: Cmd",
+      "description": "spacebar + k -> tap: %, hold: Cmd",
       "conditions": [
         {
           "type": "variable_if",
@@ -609,7 +609,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + l -> tap: ^, hold: Alt",
+      "description": "spacebar + l -> tap: ^, hold: Alt",
       "conditions": [
         {
           "type": "variable_if",
@@ -652,7 +652,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + semicolon -> tap: _, hold: Ctrl",
+      "description": "spacebar + semicolon -> tap: _, hold: Ctrl",
       "conditions": [
         {
           "type": "variable_if",
@@ -695,7 +695,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + quote -> disabled",
+      "description": "spacebar + quote -> disabled",
       "conditions": [
         {
           "type": "variable_if",
@@ -717,7 +717,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + n -> \"",
+      "description": "spacebar + n -> \"",
       "conditions": [
         {
           "type": "variable_if",
@@ -740,7 +740,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + m -> !",
+      "description": "spacebar + m -> !",
       "conditions": [
         {
           "type": "variable_if",
@@ -763,7 +763,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + comma -> @",
+      "description": "spacebar + comma -> @",
       "conditions": [
         {
           "type": "variable_if",
@@ -786,7 +786,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + period -> #",
+      "description": "spacebar + period -> #",
       "conditions": [
         {
           "type": "variable_if",
@@ -809,7 +809,7 @@
       "type": "basic"
     },
     {
-      "description": "right_command + slash -> =",
+      "description": "spacebar + slash -> =",
       "conditions": [
         {
           "type": "variable_if",
