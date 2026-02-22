@@ -31,13 +31,13 @@ COMBINE_ORDER=(
   00-move-escape.json
   12-thumbs.json
   13-tab-disable.json
-  14-delete-disable.json
+  # 14-delete-disable.json
   10-funcpad.json
-  11-funcpad-disable.json
+  # 11-funcpad-disable.json
   05-cursor.json
-  06-cursor-disable.json
+  # 06-cursor-disable.json
   07-numpad.json
-  08-numbpad-disable.json
+  # 08-numbpad-disable.json
   09-sympad.json
   01-home_row_mods-cags.json
   02-home_row_mods-disable.json
