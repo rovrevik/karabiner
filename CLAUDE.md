@@ -17,7 +17,7 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 
 | File | Purpose |
 |------|---------|
-| `00-simple.json` | Caps->Escape, escape->disabled only |
+| `00-move-escape.json` | Caps->Escape, escape->disabled |
 | `01-home_row_mods-cags.json` | CAGS home row mods: A=Ctrl, S=Alt, D=Cmd, F=Shift (left); J=Shift, K=Cmd, L=Alt, semicolon=Ctrl (right). Per-finger hold thresholds derived from ZMK companion config (`corne.keymap`). Includes all simultaneous multi-key modifier combos |
 | `02-home_row_mods-disable.json` | Disables physical modifier keys: left_control, left_command, right_command, right_option, left_shift, right_shift |
 | `03-hyper.json` | Z and slash -> Hyper (Shift+Cmd+Opt+Ctrl) on hold (pinky timing from ZMK) |

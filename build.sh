@@ -7,7 +7,7 @@ TARGET_DIR="$HOME/.config/karabiner/assets/complex_modifications"
 KARABINER_CLI="/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli"
 
 FILES=(
-  00-simple.json
+  00-move-escape.json
   01-home_row_mods-cags.json
   02-home_row_mods-disable.json
   03-hyper.json
@@ -28,7 +28,7 @@ FILES=(
 # Rule order in combined JSON: cursor/numpad/sympad/funcpad first (track physical keys), then 00/01, then home_row_mods-disable/cursor-disable/numbpad-disable, then HRM/Hyper/Meh, thumbs
 COMBINE_ORDER=(
   15-caps-word.json
-  00-simple.json
+  00-move-escape.json
   12-thumbs.json
   13-tab-disable.json
   14-delete-disable.json
