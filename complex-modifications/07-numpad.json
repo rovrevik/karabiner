@@ -338,6 +338,13 @@
         }
       ],
       "type": "basic"
+    },
+    {
+      "description": "left_command + right_command -> 0",
+      "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
+      "from": { "key_code": "right_command", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "0" }],
+      "type": "basic"
     }
   ]
 }
