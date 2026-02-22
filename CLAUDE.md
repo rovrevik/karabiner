@@ -30,8 +30,9 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `10-funcpad.json` | Left_option + spacebar (both held) -> F1-F12: 7 8 9 0->F7-F10, J K L semicolon->F4-F6 F12, M comma period slash->F1-F3 F11 |
 | `11-funcpad-disable.json` | Disables physical F1-F12 (same pattern as numbpad-disable for number row) |
 | `12-thumbs.json` | Thumb-key rules: left_control->escape, left_option tap->backspace/hold->cursor, left_command tap->tab/hold->numpad, right_command consumed (vk_none), space tap->space/hold->sympad. Sets `physical_left_option`, `physical_left_command`, `physical_spacebar`, `physical_right_command` |
-| `13-thumbs-disable.json` | Disables physical keys in the thumb area. Empty by default; add manipulators as needed |
-| `14-caps-word.json` | Caps Word mode when physical left_option held: double-tap left_option to toggle; outputs shifted letters until non-alpha. Uses `physical_left_option` and `caps_word` variables |
+| `13-tab-disable.json` | Disables physical tab key (tab provided by left_command tap on numpad layer) |
+| `14-delete-disable.json` | Disables physical delete key (delete provided by left_option tap on cursor layer) |
+| `15-caps-word.json` | Caps Word mode when physical left_option held: double-tap left_option to toggle; outputs shifted letters until non-alpha. Uses `physical_left_option` and `caps_word` variables |
 
 Additional files:
 - `apple-magic-keyboard.json` - QMK-format physical keyboard layout definition (used by keymap-drawer for visualization)
@@ -39,7 +40,7 @@ Additional files:
 - `build.sh` - Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
 - `out/` - Build artifacts (gitignored). Contains `karabiner-cags.json` and `keymap.svg`.
 
-The combined JSON is built with **rule order** 14, 00, 12, 13, 10, 11, 05, 06, 07, 08, 09, 01, 02, 03, 04 (see `COMBINE_ORDER` in `build.sh`). Cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command.
+The combined JSON is built with **rule order** 15, 00, 12, 13, 14, 10, 11, 05, 06, 07, 08, 09, 01, 02, 03, 04 (see `COMBINE_ORDER` in `build.sh`). Cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command.
 
 ### Why `keymap.yaml` is manually maintained
 

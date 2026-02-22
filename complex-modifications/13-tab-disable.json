@@ -1,0 +1,11 @@
+{
+  "description": "13-tab-disable: disable tab moved to left thumb",
+  "manipulators": [
+    {
+      "description": "tab -> disabled",
+      "from": { "key_code": "tab", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
+      "type": "basic"
+    }
+  ]
+}

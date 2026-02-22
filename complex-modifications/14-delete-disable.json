@@ -1,0 +1,11 @@
+{
+  "description": "14-delete-disable: disable delete moved to left thumb",
+  "manipulators": [
+    {
+      "description": "delete -> disabled",
+      "from": { "key_code": "delete_or_backspace", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "vk_none" }],
+      "type": "basic"
+    }
+  ]
+}
