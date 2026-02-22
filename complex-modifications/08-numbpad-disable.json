@@ -3,10 +3,7 @@
   "manipulators": [
     {
       "description": "grave -> disabled",
-      "from": {
-        "key_code": "grave_accent_and_tilde",
-        "modifiers": { "optional": ["any"] }
-      },
+      "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
@@ -78,19 +75,13 @@
     },
     {
       "description": "equal_sign -> disabled",
-      "from": {
-        "key_code": "equal_sign",
-        "modifiers": { "optional": ["any"] }
-      },
+      "from": { "key_code": "equal_sign", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
       "description": "backslash -> disabled",
-      "from": {
-        "key_code": "backslash",
-        "modifiers": { "optional": ["any"] }
-      },
+      "from": { "key_code": "backslash", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     }

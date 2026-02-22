@@ -2,70 +2,28 @@
   "description": "04-meh",
   "manipulators": [
     {
-      "from": {
-        "key_code": "x"
-      },
-      "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 150
-      },
+      "from": { "key_code": "x" },
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 150 },
       "to_delayed_action": {
-        "to_if_canceled": [
-          {
-            "key_code": "x"
-          }
-        ],
-        "to_if_invoked": [
-          {
-            "key_code": "vk_none"
-          }
-        ]
+        "to_if_canceled": [{ "key_code": "x" }],
+        "to_if_invoked": [{ "key_code": "vk_none" }]
       },
-      "to_if_alone": [
-        {
-          "halt": true,
-          "key_code": "x"
-        }
-      ],
+      "to_if_alone": [{ "halt": true, "key_code": "x" }],
       "to_if_held_down": [
-        {
-          "halt": true,
-          "key_code": "left_shift",
-          "modifiers": ["left_option", "left_control"]
-        }
+        { "halt": true, "key_code": "left_shift", "modifiers": ["left_option", "left_control"] }
       ],
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "period"
-      },
-      "parameters": {
-        "basic.to_if_held_down_threshold_milliseconds": 150
-      },
+      "from": { "key_code": "period" },
+      "parameters": { "basic.to_if_held_down_threshold_milliseconds": 150 },
       "to_delayed_action": {
-        "to_if_canceled": [
-          {
-            "key_code": "period"
-          }
-        ],
-        "to_if_invoked": [
-          {
-            "key_code": "vk_none"
-          }
-        ]
+        "to_if_canceled": [{ "key_code": "period" }],
+        "to_if_invoked": [{ "key_code": "vk_none" }]
       },
-      "to_if_alone": [
-        {
-          "halt": true,
-          "key_code": "period"
-        }
-      ],
+      "to_if_alone": [{ "halt": true, "key_code": "period" }],
       "to_if_held_down": [
-        {
-          "halt": true,
-          "key_code": "right_shift",
-          "modifiers": ["right_option", "right_control"]
-        }
+        { "halt": true, "key_code": "right_shift", "modifiers": ["right_option", "right_control"] }
       ],
       "type": "basic"
     }

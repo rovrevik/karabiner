@@ -3,345 +3,95 @@
   "manipulators": [
     {
       "description": "left_control -> escape",
-      "from": {
-        "key_code": "left_control",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "escape"
-        }
-      ],
+      "from": { "key_code": "left_control", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "escape" }],
       "type": "basic"
     },
     {
       "description": "left_option quick-tap: double-tap-and-hold -> repeat backspace",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "left_option_quick_tap",
-          "value": 1
-        }
-      ],
-      "from": {
-        "key_code": "left_option",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "delete_or_backspace"
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "left_option_quick_tap",
-            "value": 0
-          }
-        }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "left_option_quick_tap", "value": 1 }],
+      "from": { "key_code": "left_option", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "delete_or_backspace" }],
+      "to_after_key_up": [{ "set_variable": { "name": "left_option_quick_tap", "value": 0 } }],
       "type": "basic"
     },
     {
       "description": "track physical {left_option} key",
-      "from": {
-        "key_code": "left_option",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "physical_left_option",
-            "value": 1
-          }
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "physical_left_option",
-            "value": 0
-          }
-        }
-      ],
+      "from": { "key_code": "left_option", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "physical_left_option", "value": 1 } }],
+      "to_after_key_up": [{ "set_variable": { "name": "physical_left_option", "value": 0 } }],
       "to_if_alone": [
-        {
-          "key_code": "delete_or_backspace"
-        },
-        {
-          "set_variable": {
-            "name": "left_option_quick_tap",
-            "value": 1
-          }
-        }
+        { "key_code": "delete_or_backspace" },
+        { "set_variable": { "name": "left_option_quick_tap", "value": 1 } }
       ],
       "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "left_option_quick_tap",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "left_option_quick_tap",
-              "value": 0
-            }
-          }
-        ]
+        "to_if_invoked": [{ "set_variable": { "name": "left_option_quick_tap", "value": 0 } }],
+        "to_if_canceled": [{ "set_variable": { "name": "left_option_quick_tap", "value": 0 } }]
       },
-      "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 390
-      },
+      "parameters": { "basic.to_delayed_action_delay_milliseconds": 390 },
       "type": "basic"
     },
     {
       "description": "left_command quick-tap: double-tap-and-hold -> repeat tab",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "left_command_quick_tap",
-          "value": 1
-        }
-      ],
-      "from": {
-        "key_code": "left_command",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "tab"
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "left_command_quick_tap",
-            "value": 0
-          }
-        }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "left_command_quick_tap", "value": 1 }],
+      "from": { "key_code": "left_command", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "tab" }],
+      "to_after_key_up": [{ "set_variable": { "name": "left_command_quick_tap", "value": 0 } }],
       "type": "basic"
     },
     {
       "description": "track physical {left_command} key",
-      "from": {
-        "key_code": "left_command",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "physical_left_command",
-            "value": 1
-          }
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "physical_left_command",
-            "value": 0
-          }
-        }
-      ],
+      "from": { "key_code": "left_command", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "physical_left_command", "value": 1 } }],
+      "to_after_key_up": [{ "set_variable": { "name": "physical_left_command", "value": 0 } }],
       "to_if_alone": [
-        {
-          "key_code": "tab"
-        },
-        {
-          "set_variable": {
-            "name": "left_command_quick_tap",
-            "value": 1
-          }
-        }
+        { "key_code": "tab" },
+        { "set_variable": { "name": "left_command_quick_tap", "value": 1 } }
       ],
       "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "left_command_quick_tap",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "left_command_quick_tap",
-              "value": 0
-            }
-          }
-        ]
+        "to_if_invoked": [{ "set_variable": { "name": "left_command_quick_tap", "value": 0 } }],
+        "to_if_canceled": [{ "set_variable": { "name": "left_command_quick_tap", "value": 0 } }]
       },
-      "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 390
-      },
+      "parameters": { "basic.to_delayed_action_delay_milliseconds": 390 },
       "type": "basic"
     },
     {
       "description": "spacebar quick-tap: double-tap-and-hold -> repeat space",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "spacebar_quick_tap",
-          "value": 1
-        }
-      ],
-      "from": {
-        "key_code": "spacebar",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "key_code": "spacebar"
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "spacebar_quick_tap",
-            "value": 0
-          }
-        }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "spacebar_quick_tap", "value": 1 }],
+      "from": { "key_code": "spacebar", "modifiers": { "optional": ["any"] } },
+      "to": [{ "key_code": "spacebar" }],
+      "to_after_key_up": [{ "set_variable": { "name": "spacebar_quick_tap", "value": 0 } }],
       "type": "basic"
     },
     {
       "description": "track physical spacebar key",
-      "from": {
-        "key_code": "spacebar",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "physical_spacebar",
-            "value": 1
-          }
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "physical_spacebar",
-            "value": 0
-          }
-        }
-      ],
+      "from": { "key_code": "spacebar", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "physical_spacebar", "value": 1 } }],
+      "to_after_key_up": [{ "set_variable": { "name": "physical_spacebar", "value": 0 } }],
       "to_if_alone": [
-        {
-          "key_code": "spacebar"
-        },
-        {
-          "set_variable": {
-            "name": "spacebar_quick_tap",
-            "value": 1
-          }
-        }
+        { "key_code": "spacebar" },
+        { "set_variable": { "name": "spacebar_quick_tap", "value": 1 } }
       ],
       "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "spacebar_quick_tap",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "spacebar_quick_tap",
-              "value": 0
-            }
-          }
-        ]
+        "to_if_invoked": [{ "set_variable": { "name": "spacebar_quick_tap", "value": 0 } }],
+        "to_if_canceled": [{ "set_variable": { "name": "spacebar_quick_tap", "value": 0 } }]
       },
-      "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 390
-      },
+      "parameters": { "basic.to_delayed_action_delay_milliseconds": 390 },
       "type": "basic"
     },
     {
       "description": "track physical right_command key",
-      "conditions": [
-        {
-          "type": "variable_if",
-          "name": "physical_left_command",
-          "value": 0
-        }
-      ],
-      "from": {
-        "key_code": "right_command",
-        "modifiers": {
-          "optional": ["any"]
-        }
-      },
-      "to": [
-        {
-          "set_variable": {
-            "name": "physical_right_command",
-            "value": 1
-          }
-        }
-      ],
-      "to_after_key_up": [
-        {
-          "set_variable": {
-            "name": "physical_right_command",
-            "value": 0
-          }
-        }
-      ],
-      "to_if_alone": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
-      "to_if_held_down": [
-        {
-          "key_code": "vk_none"
-        }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 0 }],
+      "from": { "key_code": "right_command", "modifiers": { "optional": ["any"] } },
+      "to": [{ "set_variable": { "name": "physical_right_command", "value": 1 } }],
+      "to_after_key_up": [{ "set_variable": { "name": "physical_right_command", "value": 0 } }],
+      "to_if_alone": [{ "key_code": "vk_none" }],
+      "to_if_held_down": [{ "key_code": "vk_none" }],
       "to_delayed_action": {
-        "to_if_invoked": [
-          {
-            "set_variable": {
-              "name": "physical_right_command",
-              "value": 0
-            }
-          }
-        ],
-        "to_if_canceled": [
-          {
-            "set_variable": {
-              "name": "physical_right_command",
-              "value": 0
-            }
-          }
-        ]
+        "to_if_invoked": [{ "set_variable": { "name": "physical_right_command", "value": 0 } }],
+        "to_if_canceled": [{ "set_variable": { "name": "physical_right_command", "value": 0 } }]
       },
-      "parameters": {
-        "basic.to_delayed_action_delay_milliseconds": 390
-      },
+      "parameters": { "basic.to_delayed_action_delay_milliseconds": 390 },
       "type": "basic"
     }
   ]

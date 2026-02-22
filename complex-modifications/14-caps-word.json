@@ -15,18 +15,14 @@
       "description": "caps_lock + left_option held -> caps_word on",
       "type": "basic",
       "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
-      "conditions": [
-        { "type": "variable_if", "name": "physical_left_option", "value": 1 }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "physical_left_option", "value": 1 }],
       "to": [{ "set_variable": { "name": "caps_word", "value": 1 } }]
     },
     {
       "description": "caps_lock tap (left_option not held) -> escape",
       "type": "basic",
       "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
-      "conditions": [
-        { "type": "variable_if", "name": "physical_left_option", "value": 0 }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "physical_left_option", "value": 0 }],
       "to": [{ "key_code": "escape" }]
     },
     {
@@ -189,21 +185,14 @@
       "description": "caps_word: space -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "spacebar" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "spacebar" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "spacebar" }]
     },
     {
       "description": "caps_word: return -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "return_or_enter" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
       "to": [
         { "set_variable": { "name": "caps_word", "value": 0 } },
         { "key_code": "return_or_enter" }
@@ -213,81 +202,49 @@
       "description": "caps_word: tab -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "tab" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "tab" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "tab" }]
     },
     {
       "description": "caps_word: escape -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "escape" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "escape" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "escape" }]
     },
     {
       "description": "caps_word: comma -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "comma" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "comma" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "comma" }]
     },
     {
       "description": "caps_word: period -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "period" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "period" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "period" }]
     },
     {
       "description": "caps_word: semicolon -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "semicolon" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "semicolon" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "semicolon" }]
     },
     {
       "description": "caps_word: quote -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "quote" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "quote" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "quote" }]
     },
     {
       "description": "caps_word: open_bracket -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "open_bracket" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
       "to": [
         { "set_variable": { "name": "caps_word", "value": 0 } },
         { "key_code": "open_bracket" }
@@ -297,9 +254,7 @@
       "description": "caps_word: close_bracket -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "close_bracket" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
       "to": [
         { "set_variable": { "name": "caps_word", "value": 0 } },
         { "key_code": "close_bracket" }
@@ -309,21 +264,14 @@
       "description": "caps_word: backslash -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "backslash" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "backslash" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "backslash" }]
     },
     {
       "description": "caps_word: grave -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "grave_accent_and_tilde" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
       "to": [
         { "set_variable": { "name": "caps_word", "value": 0 } },
         { "key_code": "grave_accent_and_tilde" }
@@ -333,37 +281,22 @@
       "description": "caps_word: minus -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "minus" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "minus" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "minus" }]
     },
     {
       "description": "caps_word: equal_sign -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "equal_sign" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "equal_sign" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "equal_sign" }]
     },
     {
       "description": "caps_word: slash -> deactivate + send",
       "type": "basic",
       "from": { "key_code": "slash" },
-      "conditions": [
-        { "type": "variable_if", "name": "caps_word", "value": 1 }
-      ],
-      "to": [
-        { "set_variable": { "name": "caps_word", "value": 0 } },
-        { "key_code": "slash" }
-      ]
+      "conditions": [{ "type": "variable_if", "name": "caps_word", "value": 1 }],
+      "to": [{ "set_variable": { "name": "caps_word", "value": 0 } }, { "key_code": "slash" }]
     }
   ]
 }
