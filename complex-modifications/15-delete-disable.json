@@ -1,5 +1,5 @@
 {
-  "description": "14-delete-disable: disable delete moved to left thumb",
+  "description": "15-delete-disable: disable delete moved to left thumb",
   "manipulators": [
     {
       "description": "delete -> disabled",

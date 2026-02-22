@@ -2,7 +2,7 @@
   "title": "CAGS Home Row Mods + Navigation",
   "rules": [
     {
-      "description": "15-caps-word: ZMK-style caps word",
+      "description": "16-caps-word: ZMK-style caps word",
       "manipulators": [
         {
           "description": "caps_lock + left_option held, caps_word on -> turn off",
@@ -1050,7 +1050,7 @@
       ]
     },
     {
-      "description": "12-thumbs",
+      "description": "13-thumbs",
       "manipulators": [
         {
           "description": "left_control -> escape",
@@ -1414,7 +1414,7 @@
       ]
     },
     {
-      "description": "13-tab-disable: disable tab moved to left thumb",
+      "description": "14-tab-disable: disable tab moved to left thumb",
       "manipulators": [
         {
           "description": "tab -> disabled",
@@ -1436,7 +1436,7 @@
       ]
     },
     {
-      "description": "10-funcpad: left_option + spacebar -> function pad",
+      "description": "11-funcpad: left_option + spacebar -> function pad",
       "manipulators": [
         {
           "description": "funcpad: u -> F7",
@@ -3218,7 +3218,29 @@
       ]
     },
     {
-      "description": "09-sympad: spacebar -> symbol pad",
+      "description": "09-grave-disable: disable grave key moved to numpad layer",
+      "manipulators": [
+        {
+          "description": "grave -> disabled",
+          "from": {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "vk_none"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "10-sympad: spacebar -> symbol pad",
       "manipulators": [
         {
           "description": "sympad layer: grave -> disabled on layer",

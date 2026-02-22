@@ -1,5 +1,5 @@
 {
-  "description": "13-tab-disable: disable tab moved to left thumb",
+  "description": "14-tab-disable: disable tab moved to left thumb",
   "manipulators": [
     {
       "description": "tab -> disabled",

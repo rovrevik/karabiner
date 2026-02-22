@@ -1,5 +1,5 @@
 {
-  "description": "15-caps-word: ZMK-style caps word",
+  "description": "16-caps-word: ZMK-style caps word",
   "manipulators": [
     {
       "description": "caps_lock + left_option held, caps_word on -> turn off",

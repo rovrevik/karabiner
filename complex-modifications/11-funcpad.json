@@ -1,5 +1,5 @@
 {
-  "description": "10-funcpad: left_option + spacebar -> function pad",
+  "description": "11-funcpad: left_option + spacebar -> function pad",
   "manipulators": [
     {
       "description": "funcpad: u -> F7",

@@ -16,29 +16,31 @@ FILES=(
   06-cursor-disable.json
   07-numpad.json
   08-numbpad-disable.json
-  09-sympad.json
-  10-funcpad.json
-  11-funcpad-disable.json
-  12-thumbs.json
-  13-tab-disable.json
-  14-delete-disable.json
-  15-caps-word.json
+  09-grave-disable.json
+  10-sympad.json
+  11-funcpad.json
+  12-funcpad-disable.json
+  13-thumbs.json
+  14-tab-disable.json
+  15-delete-disable.json
+  16-caps-word.json
 )
 
 # Rule order in combined JSON: cursor/numpad/sympad/funcpad first (track physical keys), then 00/01, then home_row_mods-disable/cursor-disable/numbpad-disable, then HRM/Hyper/Meh, thumbs
 COMBINE_ORDER=(
-  15-caps-word.json
+  16-caps-word.json
   00-move-escape.json
-  12-thumbs.json
-  13-tab-disable.json
-  # 14-delete-disable.json
-  10-funcpad.json
-  # 11-funcpad-disable.json
+  13-thumbs.json
+  14-tab-disable.json
+  # 15-delete-disable.json
+  11-funcpad.json
+  # 12-funcpad-disable.json
   05-cursor.json
   # 06-cursor-disable.json
   07-numpad.json
   # 08-numbpad-disable.json
-  09-sympad.json
+  09-grave-disable.json
+  10-sympad.json
   01-home_row_mods-cags.json
   02-home_row_mods-disable.json
   03-hyper.json

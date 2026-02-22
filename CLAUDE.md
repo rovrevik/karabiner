@@ -25,14 +25,15 @@ All configs live in `complex-modifications/`. Files are numbered to indicate int
 | `05-cursor.json` | Physical left_option + right-hand keys for vim-style navigation (J, K, L, semicolon -> arrows, M, comma, period, slash -> Home/PgDn/PgUp/End). Uses a variable to distinguish physical left_option from home-row-mod S |
 | `06-cursor-disable.json` | Disables physical arrow keys: up, down, left, right (cursor layer provides HJKL navigation) |
 | `07-numpad.json` | Physical left_command (tap: tab) + keys for numpad layer (brackets, numbers). Uses variable `physical_left_command` to distinguish from home-row-mod D |
-| `08-numbpad-disable.json` | Disables physical number row: grave, 1-0, hyphen, equal_sign |
-| `09-sympad.json` | Physical spacebar (tap: space) + keys for symbol layer (symbols, punctuation). Uses variable `physical_spacebar` |
-| `10-funcpad.json` | Left_option + spacebar (both held) -> F1-F12: 7 8 9 0->F7-F10, J K L semicolon->F4-F6 F12, M comma period slash->F1-F3 F11 |
-| `11-funcpad-disable.json` | Disables physical F1-F12 (same pattern as numbpad-disable for number row) |
-| `12-thumbs.json` | Thumb-key rules: left_control->escape, left_option tap->backspace/hold->cursor, left_command tap->tab/hold->numpad, right_command consumed (vk_none), space tap->space/hold->sympad. Sets `physical_left_option`, `physical_left_command`, `physical_spacebar`, `physical_right_command` |
-| `13-tab-disable.json` | Disables physical tab key (tab provided by left_command tap on numpad layer) |
-| `14-delete-disable.json` | Disables physical delete key (delete provided by left_option tap on cursor layer) |
-| `15-caps-word.json` | Caps Word mode when physical left_option held: double-tap left_option to toggle; outputs shifted letters until non-alpha. Uses `physical_left_option` and `caps_word` variables |
+| `08-numbpad-disable.json` | Disables physical number row: 1-0, hyphen, equal_sign, backslash |
+| `09-grave-disable.json` | Disables physical grave key (moved to numpad layer) |
+| `10-sympad.json` | Physical spacebar (tap: space) + keys for symbol layer (symbols, punctuation). Uses variable `physical_spacebar` |
+| `11-funcpad.json` | Left_option + spacebar (both held) -> F1-F12: 7 8 9 0->F7-F10, J K L semicolon->F4-F6 F12, M comma period slash->F1-F3 F11 |
+| `12-funcpad-disable.json` | Disables physical F1-F12 (same pattern as numbpad-disable for number row) |
+| `13-thumbs.json` | Thumb-key rules: left_control->escape, left_option tap->backspace/hold->cursor, left_command tap->tab/hold->numpad, right_command consumed (vk_none), space tap->space/hold->sympad. Sets `physical_left_option`, `physical_left_command`, `physical_spacebar`, `physical_right_command` |
+| `14-tab-disable.json` | Disables physical tab key (tab provided by left_command tap on numpad layer) |
+| `15-delete-disable.json` | Disables physical delete key (delete provided by left_option tap on cursor layer) |
+| `16-caps-word.json` | Caps Word mode when physical left_option held: double-tap left_option to toggle; outputs shifted letters until non-alpha. Uses `physical_left_option` and `caps_word` variables |
 
 Additional files:
 - `apple-magic-keyboard.json` - QMK-format physical keyboard layout definition (used by keymap-drawer for visualization)
@@ -40,7 +41,7 @@ Additional files:
 - `build.sh` - Lints, combines configs into `out/karabiner-cags.json`, and draws `out/keymap.svg`. Pass `--install` to also copy to Karabiner.
 - `out/` - Build artifacts (gitignored). Contains `karabiner-cags.json` and `keymap.svg`.
 
-The combined JSON is built with **rule order** 15, 00, 12, 13, 14, 10, 11, 05, 06, 07, 08, 09, 01, 02, 03, 04 (see `COMBINE_ORDER` in `build.sh`). Cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command.
+The combined JSON is built with **rule order** 16, 00, 13, 14, 15, 11, 12, 05, 06, 07, 08, 09, 10, 01, 02, 03, 04 (see `COMBINE_ORDER` in `build.sh`). Cursor/numpad/sympad key manipulators are evaluated before 02 disables left_command/right_command.
 
 ### Why `keymap.yaml` is manually maintained
 
@@ -91,7 +92,7 @@ Each file contains a single JSON object with `"description"` and `"manipulators"
 
 - **Tap vs hold**: `to_if_alone` for tap output, `to_if_held_down` for modifier activation, `to_delayed_action` for cancellation handling
 - **Timing**: `basic.to_if_held_down_threshold_milliseconds` sets per-finger hold thresholds derived from the ZMK companion config (`corne.keymap` tapping-term values)
-- **Variable tracking**: `set_variable` / `variable_if` conditions to track physical key state. Variables are global within the profile. Used: `physical_left_option` (cursor, funcpad, caps-word), `physical_left_command` (numpad), `physical_spacebar` (sympad, funcpad). `physical_right_command` is set (12-thumbs, 07-numpad) but never read
+- **Variable tracking**: `set_variable` / `variable_if` conditions to track physical key state. Variables are global within the profile. Used: `physical_left_option` (cursor, funcpad, caps-word), `physical_left_command` (numpad), `physical_spacebar` (sympad, funcpad). `physical_right_command` is set (13-thumbs, 07-numpad) but never read
 - **Modifier passthrough**: `"optional": ["any"]` allows combining with other held modifiers
 
 ## Companion Config

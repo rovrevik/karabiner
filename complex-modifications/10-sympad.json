@@ -1,5 +1,5 @@
 {
-  "description": "09-sympad: spacebar -> symbol pad",
+  "description": "10-sympad: spacebar -> symbol pad",
   "manipulators": [
     {
       "description": "sympad layer: grave -> disabled on layer",

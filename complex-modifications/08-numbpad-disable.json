@@ -2,12 +2,6 @@
   "description": "08-numbpad-disable: disable number keys moved to layer",
   "manipulators": [
     {
-      "description": "grave -> disabled",
-      "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "optional": ["any"] } },
-      "to": [{ "key_code": "vk_none" }],
-      "type": "basic"
-    },
-    {
       "description": "1 -> disabled",
       "from": { "key_code": "1", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
