@@ -1,5 +1,5 @@
 {
-  "description": "06-cursor-disable: disable cursor key cluster",
+  "description": "06-cursor-disable: disable cursor key cluster moved to jkl;",
   "manipulators": [
     {
       "description": "up_arrow -> disabled",

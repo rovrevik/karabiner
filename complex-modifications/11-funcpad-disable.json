@@ -1,5 +1,5 @@
 {
-  "description": "11-funcpad-disable: disable function keys",
+  "description": "11-funcpad-disable: disable function keys moved to layer",
   "manipulators": [
     {
       "description": "f1 -> disabled",

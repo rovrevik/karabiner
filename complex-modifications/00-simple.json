@@ -1,5 +1,5 @@
 {
-  "description": "00-simple: disabled and remapped",
+  "description": "00-simple: disabled and remapped (move escape)",
   "manipulators": [
     {
       "description": "caps_lock -> escape",

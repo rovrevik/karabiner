@@ -10,126 +10,126 @@
       "type": "basic"
     },
     {
-      "description": "numpad layer: grave -> disabled",
+      "description": "numpad layer: grave -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 1 -> disabled",
+      "description": "numpad layer: 1 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "1", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 2 -> disabled",
+      "description": "numpad layer: 2 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "2", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 3 -> disabled",
+      "description": "numpad layer: 3 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "3", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 4 -> disabled",
+      "description": "numpad layer: 4 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "4", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 5 -> disabled",
+      "description": "numpad layer: 5 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "5", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 6 -> disabled",
+      "description": "numpad layer: 6 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "6", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 7 -> disabled",
+      "description": "numpad layer: 7 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "7", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 8 -> disabled",
+      "description": "numpad layer: 8 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "8", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 9 -> disabled",
+      "description": "numpad layer: 9 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "9", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: 0 -> disabled",
+      "description": "numpad layer: 0 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "0", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: hyphen -> disabled",
+      "description": "numpad layer: hyphen -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "hyphen", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "numpad layer: equal_sign -> disabled",
+      "description": "numpad layer: equal_sign -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "equal_sign", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "left_command + q -> `",
+      "description": "left_command + q -> ` (grave left)",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "q", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "grave_accent_and_tilde" }],
       "type": "basic"
     },
     {
-      "description": "left_command + w -> disabled",
+      "description": "left_command + w -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "w", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "left_command + e -> (",
+      "description": "left_command + e -> ( (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "e", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "9", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "left_command + r -> )",
+      "description": "left_command + r -> ) (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "r", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "0", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "left_command + d -> tap: [, hold: Cmd",
+      "description": "left_command + d -> tap: [ (scopes left), hold: Cmd",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "d", "modifiers": { "optional": ["any"] } },
       "to_delayed_action": {
@@ -141,7 +141,7 @@
       "type": "basic"
     },
     {
-      "description": "left_command + f -> tap: ], hold: Shift",
+      "description": "left_command + f -> tap: ] (scopes left), hold: Shift",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "f", "modifiers": { "optional": ["any"] } },
       "to_delayed_action": {
@@ -153,14 +153,14 @@
       "type": "basic"
     },
     {
-      "description": "left_command + c -> {",
+      "description": "left_command + c -> { (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "c", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "open_bracket", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "left_command + v -> }",
+      "description": "left_command + v -> } (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "v", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "close_bracket", "modifiers": ["left_shift"] }],
@@ -195,28 +195,28 @@
       "type": "basic"
     },
     {
-      "description": "left_command + open_bracket -> disabled",
+      "description": "left_command + open_bracket -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "open_bracket", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "left_command + close_bracket -> disabled",
+      "description": "left_command + close_bracket -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "close_bracket", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "left_command + backslash -> disabled",
+      "description": "left_command + backslash -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "backslash", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "left_command + p -> disabled",
+      "description": "left_command + p -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "p", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
@@ -278,7 +278,7 @@
       "type": "basic"
     },
     {
-      "description": "left_command + quote -> disabled",
+      "description": "left_command + quote -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_left_command", "value": 1 }],
       "from": { "key_code": "quote", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],

@@ -2,126 +2,126 @@
   "description": "09-sympad: spacebar -> symbol pad",
   "manipulators": [
     {
-      "description": "sympad layer: grave -> disabled",
+      "description": "sympad layer: grave -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 1 -> disabled",
+      "description": "sympad layer: 1 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "1", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 2 -> disabled",
+      "description": "sympad layer: 2 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "2", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 3 -> disabled",
+      "description": "sympad layer: 3 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "3", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 4 -> disabled",
+      "description": "sympad layer: 4 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "4", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 5 -> disabled",
+      "description": "sympad layer: 5 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "5", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 6 -> disabled",
+      "description": "sympad layer: 6 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "6", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 7 -> disabled",
+      "description": "sympad layer: 7 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "7", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 8 -> disabled",
+      "description": "sympad layer: 8 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "8", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 9 -> disabled",
+      "description": "sympad layer: 9 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "9", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: 0 -> disabled",
+      "description": "sympad layer: 0 -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "0", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: hyphen -> disabled",
+      "description": "sympad layer: hyphen -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "hyphen", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "sympad layer: equal_sign -> disabled",
+      "description": "sympad layer: equal_sign -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "equal_sign", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "spacebar + q -> ~",
+      "description": "spacebar + q -> ~ (tilde left)",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "q", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "grave_accent_and_tilde", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "spacebar + w -> disabled",
+      "description": "spacebar + w -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "w", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "spacebar + e -> (",
+      "description": "spacebar + e -> ( (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "e", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "9", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "spacebar + r -> )",
+      "description": "spacebar + r -> ) (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "r", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "0", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "spacebar + d -> tap: [, hold: Cmd",
+      "description": "spacebar + d -> tap: [ (scopes left), hold: Cmd",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "d", "modifiers": { "optional": ["any"] } },
       "to_delayed_action": {
@@ -133,7 +133,7 @@
       "type": "basic"
     },
     {
-      "description": "spacebar + f -> tap: ], hold: Shift",
+      "description": "spacebar + f -> tap: ] (scopes left), hold: Shift",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "f", "modifiers": { "optional": ["any"] } },
       "to_delayed_action": {
@@ -145,14 +145,14 @@
       "type": "basic"
     },
     {
-      "description": "spacebar + c -> {",
+      "description": "spacebar + c -> { (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "c", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "open_bracket", "modifiers": ["left_shift"] }],
       "type": "basic"
     },
     {
-      "description": "spacebar + v -> }",
+      "description": "spacebar + v -> } (scopes left)",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "v", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "close_bracket", "modifiers": ["left_shift"] }],
@@ -180,28 +180,28 @@
       "type": "basic"
     },
     {
-      "description": "spacebar + o -> disabled",
+      "description": "spacebar + o -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "o", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "spacebar + p -> disabled",
+      "description": "spacebar + p -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "p", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "spacebar + open_bracket -> disabled",
+      "description": "spacebar + open_bracket -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "open_bracket", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
       "type": "basic"
     },
     {
-      "description": "spacebar + close_bracket -> disabled",
+      "description": "spacebar + close_bracket -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "close_bracket", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],
@@ -263,7 +263,7 @@
       "type": "basic"
     },
     {
-      "description": "spacebar + quote -> disabled",
+      "description": "spacebar + quote -> disabled on layer",
       "conditions": [{ "type": "variable_if", "name": "physical_spacebar", "value": 1 }],
       "from": { "key_code": "quote", "modifiers": { "optional": ["any"] } },
       "to": [{ "key_code": "vk_none" }],

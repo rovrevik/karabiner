@@ -1,5 +1,5 @@
 {
-  "description": "13-thumbs-disable",
+  "description": "13-thumbs-disable: disable tab and delete moved to left thumb",
   "manipulators": [
     {
       "description": "tab -> disabled",

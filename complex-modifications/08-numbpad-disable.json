@@ -1,5 +1,5 @@
 {
-  "description": "08-numbpad-disable: disable number keys",
+  "description": "08-numbpad-disable: disable number keys moved to layer",
   "manipulators": [
     {
       "description": "grave -> disabled",
